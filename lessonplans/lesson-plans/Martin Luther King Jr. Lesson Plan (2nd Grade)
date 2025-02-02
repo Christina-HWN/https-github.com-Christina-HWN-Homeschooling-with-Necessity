@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Martin Luther King Jr. - 2nd Grade Resource</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .vocabulary {
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .worksheet {
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dr. Martin Luther King Jr.</h1>
+</header>
+
+<div class="container">
+    <section>
+        <h2>About Dr. Martin Luther King Jr.</h2>
+        <p>Dr. Martin Luther King Jr. was a leader who worked hard to ensure all people were treated fairly, no matter their skin color. He was born on January 15, 1929, in Atlanta, Georgia. His parents taught him the importance of kindness and standing up for what is right.</p>
+    </section>
+
+    <section>
+        <h2>The Montgomery Bus Boycott</h2>
+        <p>In 1955, Dr. King helped lead the Montgomery Bus Boycott after Rosa Parks refused to give up her seat on a bus. The protest lasted over a year and helped change rules so everyone could sit wherever they wanted.</p>
+    </section>
+
+    <section>
+        <h2>Peaceful Protests</h2>
+        <p>Dr. King believed in solving problems peacefully, an idea he learned from Mahatma Gandhi. He believed people could make the world better without fighting.</p>
+    </section>
+
+    <section>
+        <h2>The March on Washington</h2>
+        <p>In 1963, Dr. King gave his famous "I Have a Dream" speech in Washington, D.C., where he talked about a world where everyone would be treated equally.</p>
+    </section>
+
+    <section>
+        <h2>The Civil Rights Act</h2>
+        <p>Dr. King worked with others to pass the Civil Rights Act of 1964, which made it illegal to treat people unfairly based on skin color, religion, or gender.</p>
+    </section>
+
+    <section>
+        <h2>The Nobel Peace Prize</h2>
+        <p>In 1964, Dr. King received the Nobel Peace Prize for his peaceful efforts to ensure fairness and equality.</p>
+    </section>
+
+    <section class="vocabulary">
+        <h2>Vocabulary</h2>
+        <ul>
+            <li><strong>Segregation:</strong> Keeping groups of people apart, like separate schools or buses for Black and white people.</li>
+            <li><strong>Discrimination:</strong> Treating someone unfairly because of their skin color or other differences.</li>
+            <li><strong>Injustice:</strong> When people are treated unfairly or unequally.</li>
+            <li><strong>Prejudice:</strong> Judging someone before you know them based on their appearance or background.</li>
+            <li><strong>Freedom:</strong> The ability to live and act without unfair control.</li>
+        </ul>
+    </section>
+
+    <section class="worksheet">
+        <h2>Worksheet</h2>
+        <p>Read each sentence carefully and write what you think the bolded word means:</p>
+        <ol>
+            <li>Martin Luther King Jr. believed in fighting for <strong>fairness</strong>.</li>
+            <li>He spoke out against <strong>discrimination</strong>.</li>
+            <li>Dr. King encouraged <strong>nonviolence</strong> as a way of protesting.</li>
+            <li>He was an advocate for <strong>equality</strong>.</li>
+            <li>Martin Luther King Jr. believed in standing up for <strong>justice</strong>.</li>
+        </ol>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Educational Resources</p>
+</footer>
+
+</body>
+</html>
