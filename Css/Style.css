@@ -1,11 +1,11 @@
-/* ✅ Reset Default Browser Styles */
+/* Reset Default Browser Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ✅ Global Styles */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f4f8;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* ✅ Header */
+/* Header */
 header {
     background-color: #4CAF50;
     color: white;
@@ -21,7 +21,7 @@ header {
     text-align: center;
 }
 
-/* ✅ Navigation Bar */
+/*  Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@ nav {
     z-index: 1000;
 }
 
-/* ✅ Navigation Links */
+/*  Navigation Links */
 nav a {
     color: white;
     padding: 14px 20px;
@@ -50,7 +50,7 @@ nav a.active {
     color: white;
 }
 
-/* ✅ Hero Section */
+/*  Hero Section */
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -60,7 +60,7 @@ nav a.active {
     color: white;
 }
 
-/* ✅ Hero Text */
+/*  Hero Text */
 .hero h1 {
     font-size: 3em;
     margin: 0;
@@ -71,25 +71,25 @@ nav a.active {
     margin-top: 10px;
 }
 
-/* ✅ Content Section */
+/*  Content Section */
 .content {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
 }
 
-/* ✅ Content Titles */
+/*  Content Titles */
 .content h2 {
     text-align: center;
     color: #4CAF50;
 }
 
-/* ✅ Content Paragraphs */
+/*  Content Paragraphs */
 .content p {
     line-height: 1.6;
 }
 
-/* ✅ Features Section (Container for Feature Boxes) */
+/*  Features Section (Container for Feature Boxes) */
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -98,7 +98,7 @@ nav a.active {
     margin-top: 30px;
 }
 
-/* ✅ Individual Feature Boxes */
+/*  Individual Feature Boxes */
 .feature {
     flex: 1 1 300px;
     background-color: #ffffff;
@@ -109,12 +109,12 @@ nav a.active {
     text-align: center;
 }
 
-/* ✅ Feature Headings */
+/*  Feature Headings */
 .feature h3 {
     color: #4CAF50;
 }
 
-/* ✅ Footer */
+/*  Footer */
 footer {
     text-align: center;
     padding: 20px;
