@@ -58,28 +58,7 @@ nav a:hover {
 nav a.active {
     background-color: #4CAF50;
     color: white;
-}
-
-/*  Hero Section */
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('https://via.placeholder.com/1500x500'); /* Replace with a real image */
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-/*  Hero Text */
-.hero h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.5em;
-    margin-top: 10px;
-}
+} 
 
 /*  Content Section */
 .content {
