@@ -1,11 +1,11 @@
-/* Reset default browser styles */
+/* ✅ Reset Default Browser Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General body styling */
+/* ✅ Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f4f8;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header styling */
+/* ✅ Header */
 header {
     background-color: #4CAF50;
     color: white;
@@ -21,7 +21,7 @@ header {
     text-align: center;
 }
 
-/* Navigation bar */
+/* ✅ Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
@@ -32,13 +32,12 @@ nav {
     z-index: 1000;
 }
 
-/* Navigation links */
+/* ✅ Navigation Links */
 nav a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+    text-align: center;
 }
 
 nav a:hover {
@@ -46,24 +45,76 @@ nav a:hover {
     color: black;
 }
 
-/* Hero section */
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('https://via.placeholder.com/1500x500'); /* Change this to a real image */
-    background-size: cover;
+nav a.active {
+    background-color: #4CAF50;
     color: white;
 }
 
+/* ✅ Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('https://via.placeholder.com/1500x500'); /* Replace with a real image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* ✅ Hero Text */
 .hero h1 {
     font-size: 3em;
+    margin: 0;
 }
 
 .hero p {
     font-size: 1.5em;
+    margin-top: 10px;
 }
 
-/* Footer */
+/* ✅ Content Section */
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ✅ Content Titles */
+.content h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* ✅ Content Paragraphs */
+.content p {
+    line-height: 1.6;
+}
+
+/* ✅ Features Section (Container for Feature Boxes) */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* ✅ Individual Feature Boxes */
+.feature {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* ✅ Feature Headings */
+.feature h3 {
+    color: #4CAF50;
+}
+
+/* ✅ Footer */
 footer {
     text-align: center;
     padding: 20px;
