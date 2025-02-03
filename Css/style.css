@@ -20,6 +20,16 @@ header {
     padding: 20px;
     text-align: center;
 }
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('images/HWNBannerimage.webp'); /* Your banner image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 500px; /* Adjust the height as desired */
+}
+
 
 /*  Navigation Bar */
 nav {
