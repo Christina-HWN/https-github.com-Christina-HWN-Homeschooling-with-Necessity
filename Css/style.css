@@ -20,6 +20,8 @@ header {
     padding: 20px;
     text-align: center;
 }
+
+/* Hero Banner */
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -27,11 +29,28 @@ header {
     background-size: cover;
     background-position: center;
     color: white;
-    height: 500px; /* Adjust the height as desired */
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 250px;
+    }
+}
 
-/*  Navigation Bar */
+@media (max-width: 480px) {
+    .hero {
+        min-height: 200px;
+        padding: 30px 10px;
+    }
+}
+
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
@@ -42,7 +61,7 @@ nav {
     z-index: 1000;
 }
 
-/*  Navigation Links */
+/* Navigation Links */
 nav a {
     color: white;
     padding: 14px 20px;
@@ -60,25 +79,25 @@ nav a.active {
     color: white;
 } 
 
-/*  Content Section */
+/* Content Section */
 .content {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
 }
 
-/*  Content Titles */
+/* Content Titles */
 .content h2 {
     text-align: center;
     color: #4CAF50;
 }
 
-/*  Content Paragraphs */
+/* Content Paragraphs */
 .content p {
     line-height: 1.6;
 }
 
-/*  Features Section (Container for Feature Boxes) */
+/* Features Section (Container for Feature Boxes) */
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +106,7 @@ nav a.active {
     margin-top: 30px;
 }
 
-/*  Individual Feature Boxes */
+/* Individual Feature Boxes */
 .feature {
     flex: 1 1 300px;
     background-color: #ffffff;
@@ -98,12 +117,20 @@ nav a.active {
     text-align: center;
 }
 
-/*  Feature Headings */
+/* Feature Headings */
 .feature h3 {
     color: #4CAF50;
 }
 
-/*  Footer */
+/* Make All Images Responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
