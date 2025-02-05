@@ -77,7 +77,7 @@ nav a:hover {
 nav a.active {
     background-color: #4CAF50;
     color: white;
-} 
+}
 
 /* Content Section */
 .content {
@@ -137,4 +137,18 @@ footer {
     background-color: #333;
     color: white;
     margin-top: 20px;
+}
+
+/* New Styles from Inline */
+ul.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.custom-list li {
+    margin-bottom: 20px;
+}
+
+ul.custom-list h3 {
+    color: #4CAF50;
 }
