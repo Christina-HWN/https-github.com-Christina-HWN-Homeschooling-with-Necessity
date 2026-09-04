@@ -4,56 +4,366 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homeschooling with Necessity</title>
-   <link rel="stylesheet" href="assets/css/style.css">
+    <!-- We will keep the link to your external stylesheet for any other styles you have -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Modernizing the fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Embedded CSS for the Revamp (Navigation, Hero, and Grid Layout) -->
+    <style>
+        /* Base Reset & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #334155;
+            background-color: #f8fafc;
+        }
+
+        /* --- Navigation Styles --- */
+        .site-header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .brand-name {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #1e293b;
+            text-decoration: none;
+        }
+        .brand-tagline {
+            display: block;
+            font-size: 0.75rem;
+            color: #64748b;
+            font-weight: 400;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 1.2rem;
+            align-items: center;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #475569;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #0f172a;
+            background-color: #f1f5f9;
+        }
+        .nav-cta {
+            background-color: #2563eb;
+            color: #ffffff !important;
+            padding: 0.5rem 1.2rem;
+        }
+        .nav-cta:hover {
+            background-color: #1d4ed8;
+        }
+        .nav-item.dropdown {
+            position: relative;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            min-width: 240px;
+            list-style: none;
+            padding: 0.5rem 0;
+            display: none;
+            z-index: 1010;
+        }
+        .dropdown-menu li a {
+            display: block;
+            padding: 0.6rem 1.2rem;
+            color: #334155;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .dropdown-menu li a:hover {
+            background-color: #f8fafc;
+            color: #2563eb;
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .hamburger-bar {
+            width: 24px;
+            height: 3px;
+            background-color: #334155;
+            border-radius: 2px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.125rem;
+            color: #475569;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* --- Content Grid (What We Offer) --- */
+        .content-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+        .content-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #0f172a;
+            margin-bottom: 2.5rem;
+        }
+        .custom-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .grid-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .grid-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .grid-card h3 {
+            color: #1e293b;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .grid-card p {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        /* --- Footer --- */
+        .site-footer {
+            background-color: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-top: 4rem;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 868px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            .main-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #ffffff;
+                border-bottom: 1px solid #e2e8f0;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            }
+            .main-nav.active {
+                display: block;
+            }
+            .nav-list {
+                flex-direction: column;
+                padding: 1rem;
+                gap: 0.5rem;
+                align-items: stretch;
+            }
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                border: none;
+                padding-left: 1rem;
+                display: none;
+            }
+            .nav-item.dropdown:hover .dropdown-menu {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Homeschooling with Necessity</h1>
-        <p>Empowering Families.</p>
-        <p>Building Futures.</p>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-name">
+                Homeschooling with Necessity
+                <span class="brand-tagline">Empowering Families. Building Futures.</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Main Navigation Bar -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Homeschooling ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About & Journey</a></li>
+                            <li><a href="assets/FreeLessons/">Lesson Plans</a></li>
+                            <li><a href="#">Curriculum Reviews</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Education Hub ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">K–12 Resources</a></li>
+                            <li><a href="#">Adult & Lifelong Learning</a></li>
+                            <li><a href="#">AI Literacy & Tech</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">The Lab ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Experiments & Research</a></li>
+                            <li><a href="#">Homestead & Off-Grid</a></li>
+                            <li><a href="#">Save & Make Money</a></li>
+                            <li><a href="#">Investigations</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="https://narcoleptichomeschoolmom.blogspot.com/" target="_blank" rel="noopener noreferrer" class="nav-link">Blog</a></li>
+                    <li><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li><a href="#shop" class="nav-link nav-cta">Shop</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-   <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="resources.html">Resources</a>
-    <a href="assets/FreeLessons">Lesson Plans</a>
-  <ul>
-    <li><a href="https://narcoleptichomeschoolmom.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
-  </ul>
-    <a href="#contact">Contact</a>
-</nav>
-
-    <div>
-         <img src="assets/images/HWNBanner"img/>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="assets/images/HWNBanner" alt="Homeschooling with Necessity Banner" />
         <h1>Welcome to Homeschooling with Necessity</h1>
-        <p>Your journey starts here. Explore resources and build connections today!</p>
-    </div>
+        <p>Your journey starts here. Explore our ecosystem of educational resources, real-world experiments, and community connections today!</p>
+    </section>
 
-    <div class="content">
-    <h2>What We Offer</h2>
-    <ul class="custom-list">
-        <li>
-            <h3>Personalized Support</h3>
-            <p>Receive one-on-one guidance to create a homeschooling plan tailored to your family’s unique needs and goals.</p>
-        </li>
-        <li>
-            <h3>Free Resources</h3>
-            <p>Access a wealth of worksheets, lesson plans, and activities designed to integrate real-life applications into learning.</p>
-        </li>
-        <li>
-            <h3>Community Connection</h3>
-            <p>Become a part of our supportive group, <strong>Homeschoolers Anonymous</strong>, where families share experiences, learn together, and grow as a community.</p>
-        </li>
-        <li>
-            <h3>Inclusive Approach</h3>
-            <p>Discover resources crafted for children of all abilities, including those with learning disabilities, ensuring every child thrives.</p>
-        </li>
-    </ul>
-</div>
+    <!-- Content Section -->
+    <main class="content-section">
+        <h2>What We Offer</h2>
+        <div class="custom-grid">
+            
+            <div class="grid-card">
+                <h3>Personalized Support</h3>
+                <p>Receive one-on-one guidance to create a homeschooling plan tailored to your family’s unique needs and goals.</p>
+            </div>
 
-    <footer>
-        <p>&copy; 2023 Homeschooling with Necessity. All rights reserved.</p>
+            <div class="grid-card">
+                <h3>The Education Hub</h3>
+                <p>Access a wealth of free worksheets, lesson plans, and activities designed to integrate real-life applications into K-12 and adult learning.</p>
+            </div>
+
+            <div class="grid-card">
+                <h3>Community Connection</h3>
+                <p>Become a part of our supportive group, <strong>Homeschoolers Anonymous</strong>, where families share experiences, learn together, and grow.</p>
+            </div>
+
+            <div class="grid-card">
+                <h3>Inclusive Approach</h3>
+                <p>Discover resources crafted for children of all abilities, including those with learning disabilities, ensuring every child thrives.</p>
+            </div>
+
+            <div class="grid-card">
+                <h3>The Lab & Real-World Skills</h3>
+                <p>Follow along with our real-world experiments in off-grid living, saving money, AI technology, and generating independent income.</p>
+            </div>
+
+            <div class="grid-card">
+                <h3>Investigations</h3>
+                <p>Deep-dive research and firsthand reporting on community developments, holding projects accountable through verifiable facts.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2024 Homeschooling with Necessity. All rights reserved.</p>
     </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menuToggle');
+            const mainNav = document.getElementById('mainNav');
+
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', () => {
+                    mainNav.classList.toggle('active');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
