@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missouri Homestead Academic Framework | Homeschooling with Necessity</title>
+  <meta name="description" content="A Homeschooling with Necessity framework for turning real-world homestead and farm work into organized high-school-level academic study and documentation.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: { colors: {
+      brand: {50:'#fcfbf9',100:'#f4f1ea',500:'#2d6a4f',600:'#1b4332',700:'#153225',800:'#2c3531',900:'#1e2421'},
+      accent: {400:'#db825e',500:'#c86d4b',600:'#b05737'},
+      sage: {100:'#eef2f0',500:'#5c6b65'}
+    }, fontFamily: {sans:['Inter','sans-serif'],heading:['Plus Jakarta Sans','sans-serif']} } } };
+  </script>
+  <style>
+    :root{--canvas:#fcfbf9;--surface:#fff;--alt:#f4f1ea;--text:#2c3531;--muted:#5c6b65;--primary:#2d6a4f;--accent:#c86d4b;--border:#e6e2dd}
+    body{background:var(--canvas);color:var(--text)}
+    h1,h2,h3,h4{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.02em}
+    .gradient-banner{background:linear-gradient(135deg,#1b4332 0%,#2d6a4f 50%,#c86d4b 100%)}
+    @media print{.no-print{display:none!important}body{background:#fff!important;color:#000!important}.page-break{break-before:page}}
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <div class="bg-accent-500 text-white px-4 py-2.5 text-center text-xs sm:text-sm font-bold no-print">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-3">
+      <span><i class="fa-solid fa-scale-balanced mr-2"></i>Missouri Homestead Academic Framework</span>
+      <span class="bg-white/20 rounded-full px-3 py-1 text-[10px] uppercase tracking-wider">Working framework — verify legal requirements before relying on it</span>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-stone-200 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+      <a href="index.html" class="font-heading font-extrabold text-brand-600 text-lg sm:text-xl">Homeschooling with Necessity</a>
+      <nav aria-label="Page navigation" class="hidden md:flex items-center gap-5 text-sm font-semibold text-sage-500">
+        <a href="index.html" class="hover:text-brand-500">Home</a>
+        <a href="#legal" class="hover:text-brand-500">Framework</a>
+        <a href="#mapping" class="hover:text-brand-500">Academic Mapping</a>
+        <a href="#units" class="hover:text-brand-500">Unit Studies</a>
+        <a href="#portfolio" class="hover:text-brand-500">Portfolio</a>
+        <a href="#calculator" class="hover:text-brand-500">Calculator</a>
+      </nav>
+      <button onclick="window.print()" class="rounded-xl bg-brand-600 text-white px-4 py-2 font-bold text-sm hover:bg-brand-700"><i class="fa-solid fa-print mr-2"></i>Print</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="gradient-banner text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+        <div class="max-w-4xl">
+          <p class="uppercase tracking-[.2em] text-xs font-black text-white/80 mb-4">Education Hub • Real-World Learning</p>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight">Turn Daily Farm Work into Missouri High School Credits</h1>
+          <p class="mt-6 text-lg sm:text-xl text-white/90 max-w-3xl leading-relaxed">A practical framework for connecting homestead work, scientific investigation, mathematics, writing, economics, and project documentation to a rigorous home-education portfolio.</p>
+          <div class="mt-8 flex flex-wrap gap-3 no-print">
+            <a href="#mapping" class="inline-flex items-center gap-2 bg-white text-brand-700 px-6 py-3 rounded-2xl font-extrabold hover:bg-brand-50">Start with the mapping <i class="fa-solid fa-arrow-down"></i></a>
+            <button id="voicePlay" class="inline-flex items-center gap-2 bg-black/20 border border-white/30 px-6 py-3 rounded-2xl font-extrabold hover:bg-black/30"><i class="fa-solid fa-volume-high"></i> Read this page</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white border-b border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="rounded-2xl bg-brand-50 p-5 border border-stone-200"><div class="text-3xl font-black text-brand-600">1,000</div><div class="text-sm font-bold text-sage-500 mt-1">Target framework hours</div></div>
+        <div class="rounded-2xl bg-brand-50 p-5 border border-stone-200"><div class="text-3xl font-black text-brand-600">600</div><div class="text-sm font-bold text-sage-500 mt-1">Core-subject planning target</div></div>
+        <div class="rounded-2xl bg-brand-50 p-5 border border-stone-200"><div class="text-3xl font-black text-brand-600">400</div><div class="text-sm font-bold text-sage-500 mt-1">Home/farm learning target</div></div>
+        <div class="rounded-2xl bg-brand-50 p-5 border border-stone-200"><div class="text-3xl font-black text-brand-600">400</div><div class="text-sm font-bold text-sage-500 mt-1">Non-core/elective target</div></div>
+      </div>
+    </section>
+
+    <section id="legal" class="py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mb-10">
+          <p class="text-accent-600 font-black uppercase tracking-widest text-xs">01 • Framework</p>
+          <h2 class="text-3xl sm:text-4xl font-black mt-2">Demystifying the hour-and-documentation approach</h2>
+          <p class="mt-4 text-sage-500 leading-relaxed">This page is designed as an educational planning framework, not a legal determination. Use the documentation structure to make learning visible, then compare it against the current Missouri requirements and the student's actual educational plan.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="bg-white rounded-3xl border border-stone-200 p-7 shadow-sm"><div class="text-brand-600 text-2xl mb-4"><i class="fa-solid fa-book-open"></i></div><h3 class="text-xl font-extrabold">Core academics</h3><p class="mt-3 text-sage-500">Document reading, writing, mathematics, science, social studies, and other academic work embedded in projects rather than treating every subject as a separate worksheet.</p></article>
+          <article class="bg-white rounded-3xl border border-stone-200 p-7 shadow-sm"><div class="text-brand-600 text-2xl mb-4"><i class="fa-solid fa-house"></i></div><h3 class="text-xl font-extrabold">Home & farm learning</h3><p class="mt-3 text-sage-500">Capture practical work such as animal care, food preservation, gardening, construction, maintenance, water systems, and household management as documented learning experiences.</p></article>
+          <article class="bg-white rounded-3xl border border-stone-200 p-7 shadow-sm"><div class="text-accent-600 text-2xl mb-4"><i class="fa-solid fa-flask"></i></div><h3 class="text-xl font-extrabold">Electives & projects</h3><p class="mt-3 text-sage-500">Use deeper projects, research, art, technology, entrepreneurship, environmental studies, and other interests to build a strong elective record and portfolio.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mapping" class="py-16 sm:py-20 bg-brand-100 border-y border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mb-10"><p class="text-accent-600 font-black uppercase tracking-widest text-xs">02 • Academic Mapping</p><h2 class="text-3xl sm:text-4xl font-black mt-2">One homestead task can teach several subjects</h2><p class="mt-4 text-sage-500">Record the actual learning that happened. The same project can legitimately produce evidence in multiple academic areas when the work and documentation support those connections.</p></div>
+        <div class="overflow-x-auto rounded-3xl bg-white border border-stone-200 shadow-sm">
+          <table class="w-full text-left min-w-[760px]"><thead class="bg-brand-600 text-white"><tr><th class="p-4">Homestead activity</th><th class="p-4">Possible academic connections</th><th class="p-4">Evidence to save</th></tr></thead><tbody class="divide-y divide-stone-200"><tr><td class="p-4 font-bold">Animal husbandry</td><td class="p-4">Biology • Math • Writing • Economics</td><td class="p-4 text-sage-500">Care logs, measurements, research notes, budget, reflection</td></tr><tr><td class="p-4 font-bold">Gardening & soil</td><td class="p-4">Earth science • Biology • Math • Environmental studies</td><td class="p-4 text-sage-500">Garden map, soil observations, growth data, photos, journal</td></tr><tr><td class="p-4 font-bold">Woodwork & construction</td><td class="p-4">Geometry • Physics • Measurement • Design</td><td class="p-4 text-sage-500">Plans, dimensions, calculations, build photos, final assessment</td></tr><tr><td class="p-4 font-bold">Water & power systems</td><td class="p-4">Physics • Engineering • Environmental science • Math</td><td class="p-4 text-sage-500">System diagrams, calculations, experiments, maintenance records</td></tr><tr><td class="p-4 font-bold">Food preservation</td><td class="p-4">Chemistry • Biology • Nutrition • Consumer math</td><td class="p-4 text-sage-500">Recipes, process notes, measurements, safety research, cost analysis</td></tr></tbody></table>
+        </div>
+      </div>
+    </section>
+
+    <section id="units" class="py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mb-10"><p class="text-accent-600 font-black uppercase tracking-widest text-xs">03 • Four Modular Unit Studies</p><h2 class="text-3xl sm:text-4xl font-black mt-2">Build transcript-worthy learning around real projects</h2></div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <article class="rounded-3xl bg-white border border-stone-200 p-7 shadow-sm"><span class="text-xs font-black uppercase tracking-widest text-brand-500">Unit 1</span><h3 class="text-2xl font-extrabold mt-2">Soil, Seeds & Food Systems</h3><p class="mt-3 text-sage-500">Soil science, plant biology, measurement, data collection, food systems, and written reflection.</p></article>
+          <article class="rounded-3xl bg-white border border-stone-200 p-7 shadow-sm"><span class="text-xs font-black uppercase tracking-widest text-brand-500">Unit 2</span><h3 class="text-2xl font-extrabold mt-2">Animal Science & Stewardship</h3><p class="mt-3 text-sage-500">Animal biology, nutrition, observation, ethics, record keeping, and practical problem solving.</p></article>
+          <article class="rounded-3xl bg-white border border-stone-200 p-7 shadow-sm"><span class="text-xs font-black uppercase tracking-widest text-brand-500">Unit 3</span><h3 class="text-2xl font-extrabold mt-2">Off-Grid Engineering</h3><p class="mt-3 text-sage-500">Energy, water, systems thinking, electrical concepts, efficiency, diagrams, calculations, and troubleshooting.</p></article>
+          <article class="rounded-3xl bg-white border border-stone-200 p-7 shadow-sm"><span class="text-xs font-black uppercase tracking-widest text-brand-500">Unit 4</span><h3 class="text-2xl font-extrabold mt-2">Homestead Economics</h3><p class="mt-3 text-sage-500">Budgeting, cost comparisons, production decisions, entrepreneurship, market research, and financial writing.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-16 sm:py-20 bg-brand-100 border-y border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mb-10"><p class="text-accent-600 font-black uppercase tracking-widest text-xs">04 • Portfolio</p><h2 class="text-3xl sm:text-4xl font-black mt-2">Turn everyday work into evidence</h2></div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="bg-white rounded-2xl p-6 border border-stone-200"><i class="fa-solid fa-calendar-check text-brand-600 text-xl"></i><h3 class="font-extrabold mt-4">Log the work</h3><p class="text-sm text-sage-500 mt-2">Date, activity, time, subject connection, and what was learned.</p></div>
+          <div class="bg-white rounded-2xl p-6 border border-stone-200"><i class="fa-solid fa-camera text-brand-600 text-xl"></i><h3 class="font-extrabold mt-4">Capture evidence</h3><p class="text-sm text-sage-500 mt-2">Photos, diagrams, measurements, drafts, charts, and finished projects.</p></div>
+          <div class="bg-white rounded-2xl p-6 border border-stone-200"><i class="fa-solid fa-file-lines text-brand-600 text-xl"></i><h3 class="font-extrabold mt-4">Reflect & assess</h3><p class="text-sm text-sage-500 mt-2">Add research notes, written reflections, calculations, and project assessments.</p></div>
+          <div class="bg-white rounded-2xl p-6 border border-stone-200"><i class="fa-solid fa-folder-open text-brand-600 text-xl"></i><h3 class="font-extrabold mt-4">Organize by year</h3><p class="text-sm text-sage-500 mt-2">Keep a clean annual portfolio that can support transcripts and future applications.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="py-16 sm:py-20">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <p class="text-accent-600 font-black uppercase tracking-widest text-xs">05 • Interactive Hours Tracker</p>
+        <h2 class="text-3xl sm:text-4xl font-black mt-2">Track documented learning hours</h2>
+        <p class="mt-4 text-sage-500">Use this as a planning aid. It does not determine legal compliance by itself.</p>
+        <div class="mt-8 bg-white rounded-3xl border border-stone-200 shadow-sm p-6 sm:p-8">
+          <label class="block font-bold mb-2" for="hours">Hours documented</label>
+          <input id="hours" type="number" min="0" max="1000" value="0" class="w-full rounded-xl border border-stone-300 px-4 py-3 text-lg" oninput="updateHours()">
+          <div class="mt-6 h-4 bg-brand-100 rounded-full overflow-hidden"><div id="progress" class="h-full bg-brand-600 transition-all" style="width:0%"></div></div>
+          <div class="mt-3 flex justify-between text-sm font-bold"><span id="hoursLabel">0 hours</span><span id="percentLabel">0%</span></div>
+          <p id="remaining" class="mt-5 text-center font-extrabold text-brand-700">1,000 hours remaining in this planning target.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-brand-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-7 sm:p-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+          <div><p class="text-accent-400 font-black uppercase tracking-widest text-xs">Quick-Log Sheet</p><h2 class="text-2xl sm:text-3xl font-black mt-2">Before the day gets away from you, write it down.</h2><p class="mt-3 text-white/70 max-w-2xl">Date • Activity • Time • Academic connection • What was learned • Evidence saved • Reflection/assessment</p></div>
+          <button onclick="window.print()" class="no-print shrink-0 rounded-2xl bg-white text-brand-900 px-6 py-3 font-extrabold hover:bg-brand-50"><i class="fa-solid fa-print mr-2"></i>Print this framework</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-900 text-white/60 border-t border-white/10 py-8 text-center text-sm">
+    <p>Homeschooling with Necessity • Education Hub</p>
+    <p class="mt-2">This framework is an educational planning resource, not legal advice.</p>
+  </footer>
+
+  <script>
+    function updateHours(){
+      const h=Math.max(0,Math.min(1000,Number(document.getElementById('hours').value)||0));
+      const pct=h/10;
+      document.getElementById('progress').style.width=pct+'%';
+      document.getElementById('hoursLabel').textContent=h.toLocaleString()+' hours';
+      document.getElementById('percentLabel').textContent=Math.round(pct)+'%';
+      document.getElementById('remaining').textContent=(1000-h).toLocaleString()+' hours remaining in this planning target.';
+    }
+
+    const voiceButton=document.getElementById('voicePlay');
+    let speaking=false;
+    if('speechSynthesis' in window && voiceButton){
+      voiceButton.addEventListener('click',()=>{
+        if(speaking){speechSynthesis.cancel(); speaking=false; voiceButton.innerHTML='<i class="fa-solid fa-volume-high"></i> Read this page'; return;}
+        const main=document.querySelector('main');
+        const text=main.innerText;
+        const utterance=new SpeechSynthesisUtterance(text);
+        utterance.rate=.95;
+        utterance.onend=()=>{speaking=false;voiceButton.innerHTML='<i class="fa-solid fa-volume-high"></i> Read this page'};
+        speaking=true; voiceButton.innerHTML='<i class="fa-solid fa-stop"></i> Stop reading'; speechSynthesis.speak(utterance);
+      });
+    } else if(voiceButton){voiceButton.disabled=true;voiceButton.textContent='Read-aloud unavailable in this browser';}
+  </script>
+</body>
+</html>
