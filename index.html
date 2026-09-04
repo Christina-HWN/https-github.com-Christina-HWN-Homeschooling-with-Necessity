@@ -1,99 +1,57 @@
-<header class="site-header">
-  <div class="nav-container">
-    <!-- Brand Logo / Identity -->
-    <a href="index.html" class="brand-logo">
-      <span class="brand-name">Homeschooling with Necessity</span>
-    </a>
-
-    <!-- Mobile Menu Toggle Button -->
-    <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-      <span class="hamburger-bar"></span>
-      <span class="hamburger-bar"></span>
-      <span class="hamburger-bar"></span>
-    </button>
-
-    <!-- Main Navigation Bar -->
-    <nav class="main-nav" id="mainNav">
-      <ul class="nav-list">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        
-        <!-- Pillar 1: Homeschooling -->
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle">Homeschooling <span class="arrow">▾</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="homeschooling.html">Overview & Journey</a></li>
-            <li><a href="curriculum.html">Curriculum & Reviews</a></li>
-            <li><a href="planning-tools.html">Planners & Record Keeping</a></li>
-            <li><a href="missouri-info.html">Missouri Homeschool Info</a></li>
-          </ul>
-        </li>
-
-        <!-- Pillar 2: Education Hub -->
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle">Education Hub <span class="arrow">▾</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="k12-education.html">K–12 Lessons & Worksheets</a></li>
-            <li><a href="adult-education.html">Adult & Lifelong Learning</a></li>
-            <li><a href="ai-literacy.html">AI Literacy & Tech Skills</a></li>
-          </ul>
-        </li>
-
-        <!-- Pillar 3: Experiments & Research -->
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle">Ecosystem & Lab <span class="arrow">▾</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="the-lab.html">The Lab (Experiments)</a></li>
-            <li><a href="investigations.html">Investigations</a></li>
-            <li><a href="homestead.html">Homestead & Off-Grid</a></li>
-            <li><a href="save-money.html">Save Money</a></li>
-            <li><a href="make-money.html">Make Money</a></li>
-          </ul>
-        </li>
-
-        <!-- Directory & Commerce -->
-        <li><a href="resources.html" class="nav-link">Resources</a></li>
-        <li><a href="shop.html" class="nav-link nav-cta">Shop</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homeschooling with Necessity</title>
-    <!-- We will keep the link to your external stylesheet for any other styles you have -->
-    <link rel="stylesheet" href="assets/css/style.css">
     
-    <!-- Modernizing the fonts -->
+    <!-- Modern, warm organic typography (Plus Jakarta Sans + Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
 
-    <!-- Embedded CSS for the Revamp (Navigation, Hero, and Grid Layout) -->
     <style>
-        /* Base Reset & Typography */
+        /* Base Reset & Organic Theme Tokens */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
+        :root {
+            --bg-canvas: #fcfbf9;       /* Warm, soft oatmeal canvas */
+            --bg-surface: #ffffff;      /* Pure clean card surface */
+            --bg-alt: #f4f1ea;          /* Warm earthy accent section bg */
+            --color-text: #2c3531;      /* Deep forest charcoal for readability */
+            --color-muted: #5c6b65;     /* Grounded sage-gray for secondary text */
+            --color-primary: #2d6a4f;   /* Natural deep sage/forest green */
+            --color-primary-hover: #1b4332; /* Rich darker pine */
+            --color-accent: #c86d4b;    /* Warm earthy terracotta/wood accent */
+            --border-subtle: #e6e2dd;   /* Soft warm border tone */
+            --shadow-soft: 0 10px 30px -5px rgba(44, 53, 49, 0.08);
+            --radius-box: 16px;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #334155;
-            background-color: #f8fafc;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--bg-canvas);
+        }
+
+        h1, h2, h3, .brand-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            letter-spacing: -0.02em;
         }
 
         /* --- Navigation Styles --- */
         .site-header {
-            background-color: #ffffff;
-            border-bottom: 1px solid #e2e8f0;
+            background-color: var(--bg-surface);
+            border-bottom: 1px solid var(--border-subtle);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 4px 20px -4px rgba(44, 53, 49, 0.04);
         }
         .nav-container {
             max-width: 1200px;
@@ -104,43 +62,48 @@
             align-items: center;
         }
         .brand-name {
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: #1e293b;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--color-primary);
             text-decoration: none;
+            display: flex;
+            flex-direction: column;
         }
         .brand-tagline {
             display: block;
-            font-size: 0.75rem;
-            color: #64748b;
-            font-weight: 400;
+            font-size: 0.7rem;
+            color: var(--color-muted);
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
         }
         .nav-list {
             display: flex;
             list-style: none;
-            gap: 1.2rem;
+            gap: 0.5rem;
             align-items: center;
         }
         .nav-link {
             text-decoration: none;
-            color: #475569;
+            color: var(--color-muted);
             font-weight: 500;
-            font-size: 0.95rem;
-            padding: 0.5rem 0.75rem;
-            border-radius: 6px;
+            font-size: 0.9rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 8px;
             transition: all 0.2s ease;
         }
         .nav-link:hover {
-            color: #0f172a;
-            background-color: #f1f5f9;
+            color: var(--color-primary);
+            background-color: var(--bg-alt);
         }
         .nav-cta {
-            background-color: #2563eb;
+            background-color: var(--color-primary);
             color: #ffffff !important;
             padding: 0.5rem 1.2rem;
+            border-radius: 8px;
         }
         .nav-cta:hover {
-            background-color: #1d4ed8;
+            background-color: var(--color-primary-hover) !important;
         }
         .nav-item.dropdown {
             position: relative;
@@ -149,10 +112,10 @@
             position: absolute;
             top: 100%;
             left: 0;
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-box);
+            box-shadow: 0 12px 24px -6px rgba(44, 53, 49, 0.12);
             min-width: 240px;
             list-style: none;
             padding: 0.5rem 0;
@@ -162,13 +125,14 @@
         .dropdown-menu li a {
             display: block;
             padding: 0.6rem 1.2rem;
-            color: #334155;
+            color: var(--color-text);
             text-decoration: none;
             font-size: 0.9rem;
+            transition: background 0.15s;
         }
         .dropdown-menu li a:hover {
-            background-color: #f8fafc;
-            color: #2563eb;
+            background-color: var(--bg-alt);
+            color: var(--color-primary);
         }
         .nav-item.dropdown:hover .dropdown-menu {
             display: block;
@@ -183,84 +147,116 @@
         }
         .hamburger-bar {
             width: 24px;
-            height: 3px;
-            background-color: #334155;
+            height: 2.5px;
+            background-color: var(--color-text);
             border-radius: 2px;
         }
 
-        /* --- Hero Section --- */
+        /* --- Hero Section & Vibrant Banner --- */
         .hero {
             max-width: 1200px;
-            margin: 2rem auto;
+            margin: 3rem auto 2rem;
             padding: 0 1.5rem;
             text-align: center;
         }
-        .hero img {
-            max-width: 100%;
+        .hero-banner-wrapper {
+            background: linear-gradient(135deg, #e9e5de 0%, #f4f1ea 100%);
+            padding: 1.5rem;
+            border-radius: calc(var(--radius-box) + 4px);
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border-subtle);
+            margin-bottom: 2.5rem;
+        }
+        .hero-banner-container {
+            max-width: 960px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-box);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+        }
+        .hero-banner-image {
+            width: 100%;
             height: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
+            display: block;
+            object-fit: cover;
+            max-height: 420px;
         }
         .hero h1 {
-            font-size: 2.5rem;
-            color: #0f172a;
+            font-size: 2.8rem;
+            color: var(--color-text);
             margin-bottom: 1rem;
-            font-weight: 700;
+            font-weight: 800;
+        }
+        .hero h1 span {
+            color: var(--color-accent);
         }
         .hero p {
-            font-size: 1.125rem;
-            color: #475569;
+            font-size: 1.15rem;
+            color: var(--color-muted);
             max-width: 700px;
             margin: 0 auto;
         }
 
-        /* --- Content Grid (What We Offer) --- */
+        /* --- Content Section & Cards --- */
         .content-section {
+            background-color: var(--bg-alt);
+            padding: 5rem 1.5rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .content-inner {
             max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 1.5rem;
+            margin: 0 auto;
         }
         .content-section h2 {
             text-align: center;
-            font-size: 2rem;
-            color: #0f172a;
-            margin-bottom: 2.5rem;
+            font-size: 2.2rem;
+            color: var(--color-text);
+            margin-bottom: 3rem;
+            font-weight: 800;
         }
         .custom-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
         }
         .grid-card {
-            background: #ffffff;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: var(--bg-surface);
+            padding: 2.5rem;
+            border-radius: var(--radius-box);
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--border-subtle);
+            border-top: 4px solid var(--color-primary);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .grid-card:nth-child(even) {
+            border-top-color: var(--color-accent);
         }
         .grid-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-6px);
+            box-shadow: 0 16px 32px -8px rgba(44, 53, 49, 0.12);
         }
         .grid-card h3 {
-            color: #1e293b;
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
+            color: var(--color-text);
+            font-size: 1.3rem;
+            margin-bottom: 0.9rem;
+            font-weight: 700;
         }
         .grid-card p {
-            color: #475569;
-            font-size: 0.95rem;
+            color: var(--color-muted);
+            font-size: 0.98rem;
+            line-height: 1.65;
         }
 
         /* --- Footer --- */
         .site-footer {
-            background-color: #0f172a;
-            color: #cbd5e1;
+            background-color: #212623;
+            color: #a3b8b0;
             text-align: center;
-            padding: 2rem 1.5rem;
-            margin-top: 4rem;
+            padding: 3rem 1.5rem;
+            font-size: 0.9rem;
         }
 
         /* --- Mobile Responsiveness --- */
@@ -274,16 +270,16 @@
                 top: 100%;
                 left: 0;
                 width: 100%;
-                background-color: #ffffff;
-                border-bottom: 1px solid #e2e8f0;
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                background-color: var(--bg-surface);
+                border-bottom: 1px solid var(--border-subtle);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.08);
             }
             .main-nav.active {
                 display: block;
             }
             .nav-list {
                 flex-direction: column;
-                padding: 1rem;
+                padding: 1.2rem;
                 gap: 0.5rem;
                 align-items: stretch;
             }
@@ -298,19 +294,21 @@
                 display: block;
             }
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.1rem;
+            }
+            .hero-banner-wrapper {
+                padding: 1rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header & Navigation -->
     <header class="site-header">
         <div class="nav-container">
             <a href="index.html" class="brand-name">
                 Homeschooling with Necessity
-                <span class="brand-tagline">Empowering Families. Building Futures.</span>
+                <span class="brand-tagline">Empowering Families &bull; Building Futures</span>
             </a>
 
             <!-- Mobile Menu Toggle Button -->
@@ -361,57 +359,59 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <img src="assets/images/HWNBanner" alt="Homeschooling with Necessity Banner" />
-        <h1>Welcome to Homeschooling with Necessity</h1>
-        <p>Your journey starts here. Explore our ecosystem of educational resources, real-world experiments, and community connections today!</p>
+        <div class="hero-banner-wrapper">
+            <div class="hero-banner-container">
+                <img src="assets/images/homeschoolingfreedom.webp" alt="Homeschooling with Necessity Banner" class="hero-banner-image" onerror="this.src='https://placehold.co/1000x400/e6e2dd/5c6b65?text=Homeschooling+with+Necessity'"/>
+            </div>
+        </div>
+        <h1>Welcome to Homeschooling with <span>Necessity</span></h1>
+        <p>Your journey starts here. Explore our ecosystem of practical educational resources, real-world experiments, and community connections today!</p>
     </section>
 
-    <!-- Content Section -->
     <main class="content-section">
-        <h2>What We Offer</h2>
-        <div class="custom-grid">
-            
-            <div class="grid-card">
-                <h3>Personalized Support</h3>
-                <p>Receive one-on-one guidance to create a homeschooling plan tailored to your family’s unique needs and goals.</p>
-            </div>
+        <div class="content-inner">
+            <h2>What We Offer</h2>
+            <div class="custom-grid">
+                
+                <div class="grid-card">
+                    <h3>Personalized Support</h3>
+                    <p>Receive one-on-one guidance to create a homeschooling plan tailored to your family’s unique needs and goals.</p>
+                </div>
 
-            <div class="grid-card">
-                <h3>The Education Hub</h3>
-                <p>Access a wealth of free worksheets, lesson plans, and activities designed to integrate real-life applications into K-12 and adult learning.</p>
-            </div>
+                <div class="grid-card">
+                    <h3>The Education Hub</h3>
+                    <p>Access a wealth of free worksheets, lesson plans, and activities designed to integrate real-life applications into K-12 and adult learning.</p>
+                </div>
 
-            <div class="grid-card">
-                <h3>Community Connection</h3>
-                <p>Become a part of our supportive group, <strong>Homeschoolers Anonymous</strong>, where families share experiences, learn together, and grow.</p>
-            </div>
+                <div class="grid-card">
+                    <h3>Community Connection</h3>
+                    <p>Become a part of our supportive group, <strong>Homeschoolers Anonymous</strong>, where families share experiences, learn together, and grow.</p>
+                </div>
 
-            <div class="grid-card">
-                <h3>Inclusive Approach</h3>
-                <p>Discover resources crafted for children of all abilities, including those with learning disabilities, ensuring every child thrives.</p>
-            </div>
+                <div class="grid-card">
+                    <h3>Inclusive Approach</h3>
+                    <p>Discover resources crafted for children of all abilities, including those with learning disabilities, ensuring every child thrives.</p>
+                </div>
 
-            <div class="grid-card">
-                <h3>The Lab & Real-World Skills</h3>
-                <p>Follow along with our real-world experiments in off-grid living, saving money, AI technology, and generating independent income.</p>
-            </div>
+                <div class="grid-card">
+                    <h3>The Lab & Real-World Skills</h3>
+                    <p>Follow along with our real-world experiments in off-grid living, saving money, AI technology, and generating independent income.</p>
+                </div>
 
-            <div class="grid-card">
-                <h3>Investigations</h3>
-                <p>Deep-dive research and firsthand reporting on community developments, holding projects accountable through verifiable facts.</p>
-            </div>
+                <div class="grid-card">
+                    <h3>Investigations</h3>
+                    <p>Deep-dive research and firsthand reporting on community developments, holding projects accountable through verifiable facts.</p>
+                </div>
 
+            </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <p>&copy; 2024 Homeschooling with Necessity. All rights reserved.</p>
     </footer>
 
-    <!-- Mobile Menu Script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle = document.getElementById('menuToggle');
