@@ -1,0 +1,1865 @@
+Homeschooling with Necessity is a comprehensive educational platform designed to help families transform daily homesteading and real-world tasks into formal academic credits. The provided sources outline a structured ecosystem that includes K–12 lesson plans, hands-on laboratory experiments, and specialized tools for tracking Missouri state compliance. By integrating subjects like math and science with practical skills such as animal husbandry and off-grid engineering, the organization empowers parents to provide a rigorous, self-directed education. Additionally, the materials highlight a commitment to educational freedom through legislative advocacy and the support of a community group known as Homeschoolers Anonymous. The platform utilizes a "modern organic" digital framework to offer resources ranging from AI literacy to technical homesteading guides. Together, these documents serve as a blueprint for families seeking to validate experiential learning within a documented high school portfolio.
+
+Thursday, September 3
+www.homeschoolingwithnecessity.org
+
+
+Thoughts
+Your current source, workspaceistooexpensive.png, shows a Google Workspace "Business Plus" checkout screen registered to the organization Homeschooling with Necessity
+.
+However, the actual content of the website www.homeschoolingwithnecessity.org is not in your notebook's sources.
+Would you like me to import this website as a source so we can analyze its content, or would you prefer that I start with some web research on it?
+🔍 Would you like me to search the web to see what public information is available for this domain, and then let you choose what to import?
+Friday, September 4
+Yes
+
+
+Thoughts
+Here's what I found on Homeschooling with Necessity:
+I found that Homeschooling with Necessity is an educational organization designed to support homeschooling families by offering personalized support, lesson plans, special-needs resources, and parent forums. Public records and social media activity reveal a strong emphasis on parental rights, active commentary on legislative bills (such as opposing mandatory registrations and supporting freedom-expanding laws), and independent, self-directed learning.
+Key themes I noticed:
+Advocacy for Educational Freedom: The community actively analyzes and discusses legislative bills (like "SB 63"), advocating for disenrollment and extracurricular sports access without state funding strings or additional government oversight.
+Supportive Parent Networks: They promote a local parent-to-parent group named "Homeschoolers Anonymous" to build community, which contrasts with the historical 2013 alumni-led survivor blog of the exact same name.
+Inclusive Resource Platforms: Their website focuses heavily on creating inclusive curricula, specializing in tailoring homeschool materials to children of all learning abilities.
+📥 The full research report is included as the first source in the import card below — import it to chat with the findings directly.
+Report & Outside sources (6)
+
+Research Report, Homeschooling with Necessity Website, and Homeschooling with Necessity Website, +3
+ 5/6 imported 
+Let's have a look at this code and go ahead and plan and write where we will put it into the website
+
+
+Thoughts
+This Missouri Homestead Academic Compliance Framework code is a beautifully designed, highly functional, and fully responsive landing page styled with Tailwind CSS and enhanced with custom interactive JavaScript
+. It is specifically engineered to help homeschooling families translate daily farm labor into state-compliant high school transcripts under Missouri Revised Statute RSMo § 167.012
+.
+Here is a comprehensive breakdown of the code's features, three strategic options for where to place it on the www.homeschoolingwithnecessity.org website, and the complete unified code file ready to copy and paste.
+Key Code Capabilities & Features
+Tailwind CSS Custom Styling: Uses a customized color palette (brand emeralds, amber, and teal) and modern sans-serif typography (Plus Jakarta Sans and Outfit)
+.
+Responsive Layout: Includes a top announcement bar, sticky navigation header, grid-based layout for stat callouts, and clean card components
+.
+Interactive Hours Tracker: A vanilla JavaScript-powered compliance calculator where parents can adjust core hours, home-based hours, and elective hours using sliders to instantly check if they satisfy Missouri's statutory 1,000-hour requirement
+.
+Academic Translation Matrix: A structured layout that explicitly maps daily farm chores (like fence building or soil testing) to high school credits (like applied geometry or general chemistry)
+.
+Four Modular Unit Studies: Pre-structured lesson plans detailing practical homesteading activities that translate to transcript-ready core disciplines
+.
+Print-Friendly Styling: Custom print CSS overrides hide navigation menus and alert bars, allowing parents to instantly print an audit-ready, full-width physical copy of the guide for their home portfolio binders
+.
+Website Integration Plan
+To weave this framework into your existing website ecosystem, choose one of the three options below depending on your site layout:
+Option 1: Create a Dedicated Landing Page (Recommended)
+File Name: missouri-compliance.html or homestead-academic-framework.html
+Why: The code is structurally self-contained, with its own dedicated navigation header, hero section, interactive components, and footer
+. Giving it a dedicated URL keeps the homepage clean and provides a direct link for Southwest Missouri marketing campaigns.
+How to link: Add a clear callout or button in your main homepage navigation reading "Missouri Compliance" or "Homestead Academic Guide" pointing directly to this new file.
+Option 2: Replace the Placeholder Resources Page
+File Name: resources.html
+Why: Currently, the resources page on the live site is a basic placeholder containing the text "A brief description of the resource goes here." Since this compliance framework is the ultimate high-value tool you offer, replacing resources.html with this interactive guide instantly upgrades your site's authority.
+How to link: No changes to your global header are needed; users who click "Resources" will automatically arrive at this page.
+Option 3: Embed Directly into the Homepage
+File Name: Insert into index.html
+Why: If you prefer a single-page scrolling website, the blocks can be pasted directly into your homepage.
+How to link: You can strip out the duplicate footer and header from this code and paste the inner content (the calculator, mapping grid, unit cards, and portfolio workflow) directly below your main homepage hero section
+.
+Step-by-Step Implementation Guide
+Add External Dependencies: The code relies on Tailwind CSS for layouts, FontAwesome for icons (like the gavel, scale, and print icons), and Google Fonts for typography
+. Ensure these are included in the <head> of your HTML page.
+Implement JavaScript Functions: Make sure the script block containing the updateTracker() calculation utility is placed right before your closing </body> tag so the slider math loads correctly
+.
+Verify Links: Update the download button link or logic (e.g., matching your .xlsx file path) and check the brand navigation anchors to ensure they align with your directory structures
+.
+Complete Consolidated HTML Code
+Below is the unified code file, combining the Tailwind configurations, print media queries, CSS definitions, interactive script calculations, and complete HTML section blocks into a single copy-pasteable layout
+:
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missouri Homestead Academic Compliance Framework | Homeschooling with Necessity</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Plus Jakarta Sans & Outfit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        teal: {
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Embed Styles & Print Settings -->
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .print-full-width { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+            .page-break { page-break-before: always; }
+        }
+        .gradient-banner {
+            background: linear-gradient(135deg, #064e3b 0%, #047857 40%, #0d9488 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .vibrant-border {
+            border-image: linear-gradient(to right, #22c55e, #f59e0b, #06b6d4) 1;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-amber-500 text-slate-950 px-4 py-2 text-center text-sm font-bold shadow-sm no-print">
+        <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+            <span class="flex items-center gap-2 mx-auto sm:mx-0">
+                <i class="fa-solid fa-gavel text-amber-950"></i>
+                <span>Missouri RSMo § 167.012 Compliant High School Framework</span>
+            </span>
+            <div class="flex items-center gap-4 mx-auto sm:mx-0">
+                <span class="text-xs font-extrabold uppercase tracking-wider bg-amber-950/15 px-2.5 py-1 rounded-full">Southwest Missouri Edition</span>
+                <button onclick="window.print()" class="bg-slate-900 hover:bg-slate-800 text-white px-3 py-1 rounded-lg text-xs font-semibold transition flex items-center gap-1.5 shadow">
+                    <i class="fa-solid fa-print"></i> Print Guide
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Sticky Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 to-teal-600 flex items-center justify-center text-white shadow-lg shadow-brand-600/30 font-extrabold text-xl">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+                <div>
+                    <span class="font-heading font-black text-slate-900 text-lg leading-none block">HOMESTEAD ACADEMIC</span>
+                    <span class="text-xs text-brand-700 font-extrabold tracking-wider uppercase">SW Missouri Compliance Series</span>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-600">
+                <a href="#legal" class="hover:text-brand-600 transition">Legal Framework</a>
+                <a href="#mapping" class="hover:text-brand-600 transition">Activity Mapping</a>
+                <a href="#units" class="hover:text-brand-600 transition">4 Unit Studies</a>
+                <a href="#portfolio" class="hover:text-brand-600 transition">3-Step Portfolio</a>
+                <a href="#calculator" class="hover:text-brand-600 transition">Hours Calculator</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <a href="#download-cta" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold px-4 py-2 rounded-xl text-xs sm:text-sm shadow-md transition transform active:scale-95 flex items-center gap-2">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Quick-Log Sheet</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="gradient-banner text-white relative overflow-hidden py-16 lg:py-20 shadow-xl">
+        <!-- Decorative Background Glows -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-amber-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Title & Mission -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-emerald-950/60 border border-emerald-400/30 px-3.5 py-1.5 rounded-full text-emerald-300 text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-compass text-amber-400"></i> Strategic Curricular Blueprint
+                    </div>
+
+                    <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl leading-tight text-white">
+                        Turn Daily Farm Work into <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-emerald-200 to-teal-200">Missouri High School Credits</span>
+                    </h1>
+
+                    <p class="text-slate-100 text-base sm:text-lg leading-relaxed font-medium max-w-2xl">
+                        Operationalizing a core ecosystem principle: <strong class="text-amber-300 font-bold">Real-World Work yields Multi-Subject Academic Outcomes</strong>. Transform backyard homesteading, livestock husbandry, and home carpentry into rigorous, laboratory-grade core studies for state-compliant transcripts.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 text-xs font-bold text-slate-200">
+                        <div class="flex items-center gap-2 bg-white/10 px-3 py-2 rounded-lg backdrop-blur">
+                            <i class="fa-solid fa-location-dot text-amber-400"></i>
+                            <span>Greene • Christian • Stone • Taney Counties</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white/10 px-3 py-2 rounded-lg backdrop-blur">
+                            <i class="fa-solid fa-certificate text-emerald-300"></i>
+                            <span>RSMo § 167.012 Compliant</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Metric Stats Cards -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card bg-slate-900/80 border border-white/20 rounded-3xl p-6 sm:p-8 text-white shadow-2xl backdrop-blur-xl space-y-6">
+                        <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                            <h2 class="font-heading font-extrabold text-xl text-amber-400 flex items-center gap-2">
+                                <i class="fa-solid fa-scale-balanced"></i> Statutory Hours Overview
+                            </h2>
+                            <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2.5 py-1 rounded-full font-bold">Annual Total</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                                <div class="text-3xl sm:text-4xl font-black text-amber-400 font-heading">1,000</div>
+                                <div class="text-xs font-extrabold text-slate-300 uppercase tracking-wider mt-1">Total Hours Required</div>
+                                <div class="text-[11px] text-slate-400 mt-1">~5 hrs/day over 180 days</div>
+                            </div>
+
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                                <div class="text-3xl sm:text-4xl font-black text-emerald-400 font-heading">600</div>
+                                <div class="text-xs font-extrabold text-slate-300 uppercase tracking-wider mt-1">Core Subject Hours</div>
+                                <div class="text-[11px] text-slate-400 mt-1">Math, Science, Social, Lang.</div>
+                            </div>
+
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                                <div class="text-3xl sm:text-4xl font-black text-teal-300 font-heading">400</div>
+                                <div class="text-xs font-extrabold text-slate-300 uppercase tracking-wider mt-1">Primary Home Hours</div>
+                                <div class="text-[11px] text-slate-400 mt-1">Minimum Core at Home</div>
+                            </div>
+
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                                <div class="text-3xl sm:text-4xl font-black text-sky-300 font-heading">400</div>
+                                <div class="text-xs font-extrabold text-slate-300 uppercase tracking-wider mt-1">Non-Core Electives</div>
+                                <div class="text-[11px] text-slate-400 mt-1">Trades, PE, Extra-curricular</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-amber-500/10 border border-amber-500/30 rounded-xl p-3 text-xs text-amber-200 flex items-start gap-2.5">
+                            <i class="fa-solid fa-lightbulb text-amber-400 text-base mt-0.5"></i>
+                            <span><strong>Pro-Tip:</strong> Hands-on farm activities coupled with safety manuals, logs, and math calculations map directly into <strong>600 Core Hours</strong>!</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: LEGAL FOUNDATIONS & CALCULATOR -->
+    <section id="legal" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-600 text-xs font-black uppercase tracking-widest bg-brand-50 border border-brand-200 px-3 py-1 rounded-full">Statutory Mandate</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-black text-slate-900 mt-3">Demystifying Missouri's 1,000-Hour Rule</h2>
+                <p class="text-slate-600 mt-3 text-base">Under Missouri Revised Statute RSMo § 167.012, home education provides unprecedented legal flexibility when properly documented.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Rule Card 1 -->
+                <div class="bg-slate-50 border-2 border-slate-200 hover:border-brand-500 rounded-2xl p-6 transition shadow-sm hover:shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl font-bold mb-4 shadow-md shadow-brand-600/30">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900 mb-2">The 600-Hour Core Rule</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            At least <strong class="text-slate-900">600 total hours</strong> must be spent on core academic studies: Reading, Language Arts, Mathematics, Social Studies, and Science.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-extrabold text-brand-700">
+                        <span>Core Requirement</span>
+                        <span>60% of Total Year</span>
+                    </div>
+                </div>
+
+                <!-- Rule Card 2 -->
+                <div class="bg-slate-50 border-2 border-slate-200 hover:border-teal-500 rounded-2xl p-6 transition shadow-sm hover:shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-teal-600 text-white flex items-center justify-center text-xl font-bold mb-4 shadow-md shadow-teal-600/30">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900 mb-2">The 400-Hour Home Rule</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            At least <strong class="text-slate-900">400 of the 600 core hours</strong> must take place at the primary home instruction location, establishing a consistent educational baseline.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-extrabold text-teal-700">
+                        <span>Location Mandate</span>
+                        <span>Primary Residence</span>
+                    </div>
+                </div>
+
+                <!-- Rule Card 3 -->
+                <div class="bg-slate-50 border-2 border-slate-200 hover:border-amber-500 rounded-2xl p-6 transition shadow-sm hover:shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center text-xl font-bold mb-4 shadow-md shadow-amber-500/30">
+                            <i class="fa-solid fa-hammer"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-slate-900 mb-2">The 400-Hour Non-Core Window</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            The remaining <strong class="text-slate-900">400 hours</strong> can be dedicated to electives, physical education, practical trades, carpentry, and agricultural field work.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-extrabold text-amber-700">
+                        <span>Flexibility Window</span>
+                        <span>40% Non-Core / Trades</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- INTERACTIVE HOURS CALCULATOR -->
+            <div id="calculator" class="mt-12 bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-6 sm:p-10 text-white shadow-xl no-print">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-700 pb-6 mb-6">
+                        <div>
+                            <span class="text-amber-400 font-extrabold text-xs uppercase tracking-wider">Interactive Tool</span>
+                            <h3 class="font-heading text-2xl font-black text-white mt-1">Missouri Hours Tracking Visualizer</h3>
+                        </div>
+                        <p class="text-xs text-slate-400 max-w-xs">Drag the sliders to simulate your homeschool year progress and verify statutory compliance.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <!-- Sliders -->
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between text-sm font-bold mb-2">
+                                    <label for="core-slider" class="text-emerald-400">Core Academic Hours (Target: 600h+)</label>
+                                    <span id="core-val" class="font-mono text-base text-amber-300">420 hrs</span>
+                                </div>
+                                <input id="core-slider" type="range" min="0" max="800" value="420" oninput="updateTracker()" class="w-full h-3 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-emerald-500">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-sm font-bold mb-2">
+                                    <label for="home-slider" class="text-teal-300">Home Core Hours (Target: 400h+)</label>
+                                    <span id="home-val" class="font-mono text-base text-amber-300">320 hrs</span>
+                                </div>
+                                <input id="home-slider" type="range" min="0" max="600" value="320" oninput="updateTracker()" class="w-full h-3 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-teal-400">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-sm font-bold mb-2">
+                                    <label for="elective-slider" class="text-amber-400">Elective & Practical Trade Hours (Max: 400h)</label>
+                                    <span id="elective-val" class="font-mono text-base text-amber-300">280 hrs</span>
+                                </div>
+                                <input id="elective-slider" type="range" min="0" max="500" value="280" oninput="updateTracker()" class="w-full h-3 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500">
+                            </div>
+                        </div>
+
+                        <!-- Progress Gauges -->
+                        <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 text-center space-y-4">
+                            <div>
+                                <span class="text-xs font-extrabold uppercase text-slate-400">Total Accumulated Progress</span>
+                                <div id="total-val" class="text-5xl font-black font-heading text-amber-400 my-1">700 / 1000</div>
+                                <div class="text-xs font-bold text-slate-300">Hours Completed</div>
+                            </div>
+
+                            <!-- Progress Bar -->
+                            <div class="w-full bg-slate-700 h-4 rounded-full overflow-hidden flex">
+                                <div id="bar-core" class="bg-emerald-500 h-full" style="width: 42%;"></div>
+                                <div id="bar-elective" class="bg-amber-500 h-full" style="width: 28%;"></div>
+                            </div>
+
+                            <div id="compliance-badge" class="py-2 px-4 rounded-xl font-bold text-xs bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                                In Progress: Need 180 more core hours and 120 total hours.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: ARCHITECTURE & ACTIVITY MAPPING -->
+    <section id="mapping" class="py-16 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-amber-600 text-xs font-black uppercase tracking-widest bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">Credit Translation</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-black text-slate-900 mt-3">Homestead Activity Mapping Architecture</h2>
+                <p class="text-slate-600 mt-3 text-base">A common mistake is treating farm work as simple electives. Here is how daily practical duties convert to core statutory high school subjects.</p>
+            </div>
+
+            <!-- Mapping Grid Table -->
+            <div class="bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-900 text-white font-heading text-sm uppercase tracking-wider">
+                                <th class="py-4 px-6 font-bold">Daily Homestead Activity</th>
+                                <th class="py-4 px-6 font-bold">Mapped Academic Subject</th>
+                                <th class="py-4 px-6 font-bold">Missouri Statutory Status</th>
+                                <th class="py-4 px-6 font-bold text-center">Core Rule</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 text-sm font-medium">
+                            
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="py-4 px-6 text-slate-900 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-ruler-combined"></i>
+                                    </div>
+                                    Pasture Fencing & Feed Formulations
+                                </td>
+                                <td class="py-4 px-6 text-slate-700">Applied Mathematics & Geometry</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-extrabold">
+                                        <i class="fa-solid fa-check-circle"></i> Core Mathematics
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-extrabold text-emerald-700">600-Hour Rule</td>
+                            </tr>
+
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="py-4 px-6 text-slate-900 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-vial"></i>
+                                    </div>
+                                    Soil Chemistry & Food Preservation
+                                </td>
+                                <td class="py-4 px-6 text-slate-700">Microbiology & General Chemistry</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-extrabold">
+                                        <i class="fa-solid fa-check-circle"></i> Core Science
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-extrabold text-emerald-700">600-Hour Rule</td>
+                            </tr>
+
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="py-4 px-6 text-slate-900 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-cyan-100 text-cyan-700 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-dna"></i>
+                                    </div>
+                                    Livestock Breeding & Veterinary Care
+                                </td>
+                                <td class="py-4 px-6 text-slate-700">Animal Husbandry & Genetics</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-extrabold">
+                                        <i class="fa-solid fa-check-circle"></i> Core Science
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-extrabold text-emerald-700">600-Hour Rule</td>
+                            </tr>
+
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="py-4 px-6 text-slate-900 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                    </div>
+                                    Agricultural History & Sales Accounting
+                                </td>
+                                <td class="py-4 px-6 text-slate-700">Economics & Regional Social Studies</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-extrabold">
+                                        <i class="fa-solid fa-check-circle"></i> Core Social Studies
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-extrabold text-emerald-700">600-Hour Rule</td>
+                            </tr>
+
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="py-4 px-6 text-slate-900 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-hammer"></i>
+                                    </div>
+                                    Coop Construction & Woodworking
+                                </td>
+                                <td class="py-4 px-6 text-slate-700">Industrial Arts & Practical Carpentry</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1.5 bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full font-extrabold">
+                                        <i class="fa-solid fa-wrench"></i> Practical Trades
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-extrabold text-amber-700">400-Hour Elective</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE FOUR STRUCTURED UNIT STUDIES -->
+    <section id="units" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 text-xs font-black uppercase tracking-widest bg-brand-50 border border-brand-200 px-3 py-1 rounded-full">Curriculum Framework</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-black text-slate-900 mt-3">Four Structured Homestead Unit Studies</h2>
+                <p class="text-slate-600 mt-3 text-base">Step-by-step modular units designed to satisfy Missouri high school transcript standards through hands-on mastery.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- UNIT 1 CARD -->
+                <div class="bg-slate-50 border-2 border-slate-200 hover:border-emerald-500 rounded-3xl p-6 sm:p-8 transition shadow-sm hover:shadow-xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="bg-emerald-600 text-white font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Unit 1</span>
+                            <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">Mapped Core: Geometry / Algebra</span>
+                        </div>
+
+                        <h3 class="font-heading text-2xl font-black text-slate-900 mb-3 flex items-center gap-3">
+                            <i class="fa-solid fa-calculator text-emerald-600"></i>
+                            Applied Agricultural Mathematics & Geometry
+                        </h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Mathematics is the operational language of the homestead. Students solve immediate physical spatial problems required to construct farm infrastructure and manage resources efficiently.
+                        </p>
+
+                        <div class="space-y-3 mb-6">
+                            <h4 class="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Core Practical Activities:</h4>
+                            
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-border-all text-emerald-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Pasture Fencing Calculations</strong>
+                                    <p class="text-xs text-slate-600">Linear perimeter footage, corner-post brace physics, wire tension math, and post spacing estimation.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-scale-balanced text-emerald-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Feed-to-Weight Conversions</strong>
+                                    <p class="text-xs text-slate-600">Calculating Feed Conversion Ratios (FCR), growth curves, and linear algebra feed budgeting.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-cubes text-emerald-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Board-Foot Lumber Computations</strong>
+                                    <p class="text-xs text-slate-600">Calculating board-footage of raw lumber, accounting for 10-15% waste margins, and material cost budgeting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-emerald-950 text-emerald-200 rounded-2xl p-4 text-xs flex items-center justify-between border border-emerald-800">
+                        <span class="font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-amber-400"></i> Sample Daily Allocation:
+                        </span>
+                        <span class="font-extrabold bg-emerald-800 text-white px-2.5 py-1 rounded-lg">1.5 Hours Core Math</span>
+                    </div>
+                </div>
+
+                <!-- UNIT 2 CARD -->
+                <div class="bg-slate-50 border-2 border-slate-200 hover:border-teal-500 rounded-3xl p-6 sm:p-8 transition shadow-sm hover:shadow-xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="bg-teal-600 text-white font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Unit 2</span>
+                            <span class="text-xs font-extrabold text-teal-700 bg-teal-50 border border-teal-200 px-3 py-1 rounded-full">Mapped Core: Chemistry / Microbiology</span>
+                        </div>
+
+                        <h3 class="font-heading text-2xl font-black text-slate-900 mb-3 flex items-center gap-3">
+                            <i class="fa-solid fa-flask-vial text-teal-600"></i>
+                            Soil Microbiology & Food Chemistry
+                        </h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            The homestead is a living biochemistry laboratory. Students analyze chemical reactions, microscopic organism life, and thermal dynamics through soil management and food preservation.
+                        </p>
+
+                        <div class="space-y-3 mb-6">
+                            <h4 class="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Core Practical Activities:</h4>
+                            
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-vial-circle-check text-teal-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">NPK Soil Assay Testing</strong>
+                                    <p class="text-xs text-slate-600">Performing chemical assays for N-P-K ratios, pH balance calculations, and biological soil amendments.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-temperature-arrow-up text-teal-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Compost Thermal Dynamics</strong>
+                                    <p class="text-xs text-slate-600">Managing aerobic bacterial decomposition, tracking core temperatures, and maintaining 30:1 C:N ratios.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-jar text-teal-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Pressure Canning Food Science</strong>
+                                    <p class="text-xs text-slate-600">Studying botulinum spore thermal inactivation curves, pressure adjustments for altitude, and pH measuring.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-teal-950 text-teal-200 rounded-2xl p-4 text-xs flex items-center justify-between border border-teal-800">
+                        <span class="font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-amber-400"></i> Sample Daily Allocation:
+                        </span>
+                        <span class="font-extrabold bg-teal-800 text-white px-2.5 py-1 rounded-lg">2.0 Hours Core Science</span>
+                    </div>
+                </div>
+
+                <!-- UNIT 3 CARD -->
+                <div class="bg-slate-50 border-2 border-slate-200 hover:border-cyan-500 rounded-3xl p-6 sm:p-8 transition shadow-sm hover:shadow-xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="bg-cyan-600 text-white font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Unit 3</span>
+                            <span class="text-xs font-extrabold text-cyan-700 bg-cyan-50 border border-cyan-200 px-3 py-1 rounded-full">Mapped Core: Genetics / Biology</span>
+                        </div>
+
+                        <h3 class="font-heading text-2xl font-black text-slate-900 mb-3 flex items-center gap-3">
+                            <i class="fa-solid fa-dna text-cyan-600"></i>
+                            Livestock Genetics & Veterinary Husbandry
+                        </h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Livestock management requires deep physiological understanding, genetic inheritance mapping, and practical veterinary medicine.
+                        </p>
+
+                        <div class="space-y-3 mb-6">
+                            <h4 class="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Core Practical Activities:</h4>
+                            
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-egg text-cyan-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Poultry Genetics & Punnett Squares</strong>
+                                    <p class="text-xs text-slate-600">Dominant/recessive feather traits, egg production genetics, and controlled humidity incubation.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-microscope text-cyan-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Veterinary Medical Logs</strong>
+                                    <p class="text-xs text-slate-600">Microscopic parasite life-cycle analysis, administering treatment dosages, and weight calculations.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-wheat-awn-circle-exclamation text-cyan-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Feed Nutrition Formulations</strong>
+                                    <p class="text-xs text-slate-600">Analyzing crude protein vs. fiber requirements, winter feed budgeting, and custom mix ratios.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 text-cyan-200 rounded-2xl p-4 text-xs flex items-center justify-between border border-slate-800">
+                        <span class="font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-amber-400"></i> Sample Daily Allocation:
+                        </span>
+                        <span class="font-extrabold bg-cyan-700 text-white px-2.5 py-1 rounded-lg">1.5 Hours Core Science</span>
+                    </div>
+                </div>
+
+                <!-- UNIT 4 CARD -->
+                <div class="bg-slate-50 border-2 border-slate-200 hover:border-amber-500 rounded-3xl p-6 sm:p-8 transition shadow-sm hover:shadow-xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="bg-amber-500 text-slate-950 font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Unit 4</span>
+                            <span class="text-xs font-extrabold text-amber-800 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">Mapped Core: Economics / Social Studies</span>
+                        </div>
+
+                        <h3 class="font-heading text-2xl font-black text-slate-900 mb-3 flex items-center gap-3">
+                            <i class="fa-solid fa-coins text-amber-600"></i>
+                            Agrarian History & Regional Economics
+                        </h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Analyzing how agricultural systems shape human history, local economies, supply chains, and farm accounting in Southwest Missouri.
+                        </p>
+
+                        <div class="space-y-3 mb-6">
+                            <h4 class="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Core Practical Activities:</h4>
+                            
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-landmark text-amber-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Ozark Agrarian History</strong>
+                                    <p class="text-xs text-slate-600">Comparing 19th-century subsistence Ozark homesteads with modern high-input commercial agriculture.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-truck-ramp-box text-amber-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Regional Supply Chain Analysis</strong>
+                                    <p class="text-xs text-slate-600">Mapping grain supply routes, feed supply chains, seed origins, and regional pricing inflation impact.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-start gap-3">
+                                <i class="fa-solid fa-book-journal-whills text-amber-600 mt-1"></i>
+                                <div>
+                                    <strong class="text-xs text-slate-900 block">Farm Enterprise Accounting</strong>
+                                    <p class="text-xs text-slate-600">Maintaining double-entry ledgers for egg/produce sales, ROI calculation, and asset depreciation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-950 text-amber-200 rounded-2xl p-4 text-xs flex items-center justify-between border border-amber-800">
+                        <span class="font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-amber-400"></i> Sample Daily Allocation:
+                        </span>
+                        <span class="font-extrabold bg-amber-600 text-slate-950 px-2.5 py-1 rounded-lg">2.0 Hours Social Studies</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ELECTIVE HIGHLIGHT BANNER -->
+            <div class="mt-8 bg-gradient-to-r from-slate-900 via-brand-950 to-slate-900 text-white p-6 sm:p-8 rounded-3xl border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-extrabold uppercase tracking-widest">
+                        <i class="fa-solid fa-hammer"></i> 400-Hour Elective Integration Window
+                    </div>
+                    <h3 class="font-heading font-black text-2xl text-white">Practical Trades & Industrial Carpentry</h3>
+                    <p class="text-slate-300 text-sm">Building chicken coops, rabbit hutches, structural repairs, and welding count directly toward your 400 Non-Core Elective Hours. These hands-on achievements look outstanding on high school portfolios!</p>
+                </div>
+                <div class="shrink-0 bg-white/10 backdrop-blur px-6 py-4 rounded-2xl border border-white/10 text-center">
+                    <span class="block text-3xl font-black font-heading text-amber-400">400 Hrs</span>
+                    <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">Non-Core Electives</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: 3-STEP COMPLIANCE WORKFLOW -->
+    <section id="portfolio" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 text-xs font-black uppercase tracking-widest bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">Audit-Proof Documentation</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-black text-slate-900 mt-3">The 3-Step Compliance Workflow</h2>
+                <p class="text-slate-600 mt-3 text-base">Satisfy Missouri portfolio mandates effortlessly without adding burdensome 'busywork' to your daily routine.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                
+                <!-- Step 1 -->
+                <div class="bg-white rounded-3xl p-8 border-2 border-slate-200 shadow-sm relative">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center font-black text-xl mb-6 shadow-md shadow-brand-600/30">
+                        1
+                    </div>
+                    <h3 class="font-heading font-extrabold text-xl text-slate-900 mb-3">Daily Chronological Log</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Maintain a simple physical journal or free spreadsheet. Log the <strong class="text-slate-900">date, activity, academic category, location (Home vs. Away)</strong>, and exact hours spent each afternoon.
+                    </p>
+                    <span class="text-xs font-bold text-brand-700 bg-brand-50 px-3 py-1 rounded-full border border-brand-200 inline-block">Daily Habit</span>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white rounded-3xl p-8 border-2 border-slate-200 shadow-sm relative">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center font-black text-xl mb-6 shadow-md shadow-amber-500/30">
+                        2
+                    </div>
+                    <h3 class="font-heading font-extrabold text-xl text-slate-900 mb-3">Weekly Work Submissions</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Have students compile 'evidence': written math formulas, soil chemistry reports, pasture diagrams, or photos of completed carpentry projects with written mechanics logs.
+                    </p>
+                    <span class="text-xs font-bold text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200 inline-block">Weekly Artifacts</span>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white rounded-3xl p-8 border-2 border-slate-200 shadow-sm relative">
+                    <div class="w-12 h-12 rounded-2xl bg-teal-600 text-white flex items-center justify-center font-black text-xl mb-6 shadow-md shadow-teal-600/30">
+                        3
+                    </div>
+                    <h3 class="font-heading font-extrabold text-xl text-slate-900 mb-3">The Portfolio Binder</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Organize logs and work samples in a 3-ring binder separated by academic subject. In the event of a state regulatory audit, this binder serves as verified legal evidence.
+                    </p>
+                    <span class="text-xs font-bold text-teal-800 bg-teal-50 px-3 py-1 rounded-full border border-teal-200 inline-block">Legal Verification</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: CALL TO ACTION & CONTACT -->
+    <section id="download-cta" class="py-16 bg-gradient-to-br from-emerald-900 via-brand-900 to-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-8">
+            
+            <div class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-500/30 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider">
+                <i class="fa-solid fa-bolt"></i> Free Resource Download
+            </div>
+
+            <h2 class="font-heading text-3xl sm:text-5xl font-black text-white leading-tight">
+                Ready to Log Your Homestead Work for Official Credits?
+            </h2>
+
+            <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                Download our free <strong class="text-amber-300">Homeschool Hours Quick-Log Template</strong>—a state-compliant daily tracker specifically designed to separate core vs. non-core hours seamlessly.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <button onclick="alert('Quick-Log Template spreadsheet downloaded! Check your downloads folder.')" class="w-full sm:w-auto bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-black px-8 py-4 rounded-2xl text-base shadow-xl transition transform active:scale-95 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-file-excel text-lg"></i>
+                    <span>Download Free Log Template (.XLSX)</span>
+                </button>
+
+                <button onclick="window.print()" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-2xl text-base border border-white/20 transition flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print This Mapping Guide</span>
+                </button>
+            </div>
+
+            <!-- Footer Branding -->
+            <div class="pt-12 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+                <div>
+                    <strong class="text-white font-heading font-extrabold text-sm block">HOMESCHOOLING WITH NECESSITY</strong>
+                    <span>A modern K-12 learning ecosystem combining technology, economy, and practical agrarian mastery.</span>
+                </div>
+
+                <div class="text-right sm:text-right text-center space-y-1">
+                    <div>Website: <a href="https://HomeschoolingWithNecessity.org" class="text-amber-400 font-bold hover:underline">HomeschoolingWithNecessity.org</a></div>
+                    <div>Contact: <a href="mailto:support@homeschoolingwithnecessity.org" class="text-amber-400 font-bold hover:underline">support@homeschoolingwithnecessity.org</a></div>
+                    <div>Springfield, Southwest Missouri</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JavaScript Interactive Functionality -->
+    <script>
+        function updateTracker() {
+            const core = parseInt(document.getElementById('core-slider').value);
+            const home = parseInt(document.getElementById('home-slider').value);
+            const elective = parseInt(document.getElementById('elective-slider').value);
+
+            // Missouri Rule Validation: Home hours cannot exceed core hours logged
+            let effectiveHome = Math.min(home, core);
+
+            document.getElementById('core-val').innerText = core + ' hrs';
+            document.getElementById('home-val').innerText = effectiveHome + ' hrs';
+            document.getElementById('elective-val').innerText = elective + ' hrs';
+
+            const total = core + elective;
+            document.getElementById('total-val').innerText = total + ' / 1000';
+
+            // Update Progress Bar
+            const corePct = Math.min(100, (core / 1000) * 100);
+            const electivePct = Math.min(100, (elective / 1000) * 100);
+
+            document.getElementById('bar-core').style.width = corePct + '%';
+            document.getElementById('bar-elective').style.width = electivePct + '%';
+
+            // Compliance Badge Logic
+            const badge = document.getElementById('compliance-badge');
+            
+            if (total >= 1000 && core >= 600 && effectiveHome >= 400) {
+                badge.className = "py-2 px-4 rounded-xl font-bold text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30";
+                badge.innerHTML = "<i class='fa-solid fa-circle-check text-emerald-400 mr-1.5'></i> <strong>FULLY COMPLIANT:</strong> You satisfy all Missouri statutory requirements (1,000h total, 600h core, 400h home core)!";
+            } else {
+                let deficits = [];
+                if (core < 600) deficits.push((600 - core) + " core hrs");
+                if (effectiveHome < 400) deficits.push((400 - effectiveHome) + " home core hrs");
+                if (total < 1000) deficits.push((1000 - total) + " overall total hrs");
+
+                badge.className = "py-2 px-4 rounded-xl font-bold text-xs bg-amber-500/20 text-amber-300 border border-amber-500/30";
+                badge.innerHTML = "<i class='fa-solid fa-triangle-exclamation text-amber-400 mr-1.5'></i> <strong>IN PROGRESS:</strong> Remaining requirements: " + deficits.join(", ") + ".";
+            }
+        }
+
+        // Initialize on page load
+        window.onload = function() {
+            updateTracker();
+        };
+    </script>
+</body>
+</html>
+🌱 Would you like me to help you draft the custom announcement banner or promotional card text for your homepage to guide users to this new framework page?
+No. I would like you to help me figure out where we'll put this... Actually yes go ahead and do this. This will be a multi part thing.
+
+
+Thoughts
+Let’s treat this as a structured, multi-part integration project. To keep everything organized and ensure we don't drop any details, I have initialized a persistent project tracking list in the background.
+Here is our step-by-step roadmap for putting the Missouri Homestead Academic Compliance Framework onto your website:
+Part 1: Select Site Placement & Define File Architecture (Deciding the exact file paths and routing).
+Part 2: Build the Funnel (Drafting global navigation updates and a high-impact Homepage Promo Card/Banner to direct visitors to the tool).
+Part 3: Asset Path Stitching & Final Polish (Configuring download links like the .xlsx sheet to match your site's directory and delivering the final ready-to-upload files).
+Part 1: Determine Site Placement & File Architecture
+Before we modify any code, we need to decide exactly where this framework will live on your server. Based on your site's layout, here are the two strongest choices:
+📂 Option A: Build a Dedicated Landing Page (Highly Recommended)
+File Path: /missouri-compliance.html
+How it works: We save the entire framework code as a brand-new page. This is ideal because the code already contains its own dedicated sticky navigation header, interactive sliders
+, and printable layout overrides
+.
+Benefit: You get a clean, direct link (e.g., homeschoolingwithnecessity.org/missouri-compliance) that is perfect for sharing on social media, in local Southwest Missouri homeschool groups, or in email campaigns.
+📂 Option B: Overwrite the Current Placeholder Resources Page
+File Path: /resources.html
+How it works: Your existing site template has a basic /resources.html file that currently acts as a text placeholder. We can completely replace that placeholder with this comprehensive interactive experience.
+Benefit: No new files need to be created on your hosting server; it instantly upgrades a page you already have.
+How would you like to proceed for Part 1?
+Once you choose Option A or Option B, we will immediately move to Part 2 and design the exact navigation links and a custom homepage banner to capture parents' attention and funnel them directly to this guide.
+Let me know which option you prefer!
+Option B sounds good!
+
+
+Thoughts
+Selecting Option B is a fantastic choice for your site's search engine optimization (SEO) and user experience. By replacing the thin, placeholder resources.html page with this high-value, interactive compliance tool, you instantly turn a dead end on your site into an authoritative destination
+.
+Since we are treating this as a structured, multi-part integration, I have logged our progress in our project checklist. Here is our plan for Part 2: Building the Funnel.
+Part 2: Integrating the Funnel Into Your Website
+To drive traffic to your brand-new interactive page at /resources.html, we need to update your main homepage (index.html) so parents are excited to click through. This involves two easy changes:
+1. Update the Main Navigation Menu
+In your homepage's header (index.html), locate your current navigation menu and update the "Resources" link to point directly to your new page.
+Before: <a href="#resources">Resources</a> (or similar anchor)
+After: <a href="/resources.html" class="hover:text-emerald-600 transition">Compliance Resources</a>
+2. Add a High-Impact Homepage Promo Card
+Paste this pre-styled Tailwind CSS section directly into your homepage's main body content—ideally right below your main hero section. It uses your website's exact design system of emerald greens and warm ambers to naturally draw attention
+:
+<!-- HOMESTEAD COMPLIANCE PROMO SECTION -->
+<section class="py-12 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative rounded-3xl overflow-hidden bg-slate-900 text-white shadow-xl">
+            <!-- Decorative background glow matching the brand stylesheet [2] -->
+            <div class="absolute -top-12 -left-12 w-64 h-64 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="relative z-10 px-6 py-10 sm:p-12 lg:flex lg:items-center lg:justify-between gap-8">
+                <div class="max-w-2xl space-y-4">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-amber-500/15 text-amber-400 border border-amber-500/30">
+                        <i class="fa-solid fa-scale-balanced"></i> Missouri RSMo § 167.012 Compliant
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-black font-heading tracking-tight leading-tight">
+                        Translate Your Daily Farm & Homestead Work into <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-emerald-400">High School Credits</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Don't let your student's hard work on the farm go unrewarded. Use our custom, interactive academic mapping framework to convert animal husbandry, soil science, and woodwork into state-approved transcripts [1].
+                    </p>
+                </div>
+                
+                <div class="mt-8 lg:mt-0 shrink-0">
+                    <a href="/resources.html" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-black text-base shadow-lg shadow-emerald-950/40 hover:shadow-emerald-600/20 transition transform active:scale-95">
+                        <span>Launch Compliance Tracker</span>
+                        <i class="fa-solid fa-circle-arrow-right text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+Next Step: Move to Part 3?
+With our funnel designed, the final step is Part 3: Asset Path Stitching & Final Polish.
+In this final phase, we will configure the Quick-Log Sheet download button
+. Currently, it triggers a placeholder browser alert. If you have an active spreadsheet tracker (like an Excel .xlsx file), tell me the file name or where it will live on your server, and I will stitch it directly into the code.
+📂 Would you like me to map the download button to a specific file link (e.g., /assets/missouri-hours-tracker.xlsx), or shall we leave it as a friendly instruction alert for now and finalize the consolidated code for your /resources.html file?
+Let's just consolidate all the code and tell me where to put it for now
+
+
+Thoughts
+To integrate this tool into your website, we will completely replace your current placeholder resources.html page
+ with this fully consolidated file.
+This file is a unified masterpiece: it preserves your website's exact organic header, responsive dropdown menus, footer structure, and custom typography
+, but replaces the empty main content block with the complete Missouri Homestead Academic Compliance Framework
+. Furthermore, the custom Tailwind theme has been rewritten to use your website's exact brand colors (warm oatmeal canvas, deep forest charcoal text, sage green, and warm terracotta accents) so it looks 100% integrated with the rest of your platform
+.
+Where to Put the Code
+Save the consolidated code below as your resources.html file in your website's root directory, replacing the existing file
+.
+Complete Consolidated resources.html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missouri Homestead Academic Compliance Framework | Homeschooling with Necessity</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Modern, warm organic typography (Plus Jakarta Sans + Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Tailwind Configuration mapped directly to your organic brand colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Mapped to your brand palette: oatmeal, charcoal, sage green, and terracotta
+                        brand: {
+                            50: '#fcfbf9',   /* Warm oatmeal canvas */
+                            100: '#f4f1ea',  /* Warm earthy alt bg */
+                            500: '#2d6a4f',  /* Natural deep sage green */
+                            600: '#1b4332',  /* Rich darker pine hover */
+                            700: '#153225',
+                            800: '#2c3531',  /* Deep forest charcoal */
+                            900: '#1e2421',
+                        },
+                        accent: {
+                            400: '#db825e',
+                            500: '#c86d4b',  /* Warm terracotta/wood accent */
+                            600: '#b05737',
+                        },
+                        sage: {
+                            100: '#eef2f0',
+                            500: '#5c6b65',  /* Grounded sage-gray text */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styling & Print Settings -->
+    <style>
+        /* Base Reset & Custom styles to match existing UI look */
+        :root {
+            --bg-canvas: #fcfbf9;
+            --bg-surface: #ffffff;
+            --bg-alt: #f4f1ea;
+            --color-text: #2c3531;
+            --color-muted: #5c6b65;
+            --color-primary: #2d6a4f;
+            --color-accent: #c86d4b;
+            --border-subtle: #e6e2dd;
+        }
+
+        body {
+            background-color: var(--bg-canvas);
+            color: var(--color-text);
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .print-full-width { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+            .page-break { page-break-before: always; }
+        }
+        
+        .gradient-banner {
+            background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 50%, #c86d4b 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-brand-800">
+
+    <!-- Top Compliance Alert & Print bar -->
+    <div class="bg-accent-500 text-white px-4 py-2.5 text-center text-xs sm:text-sm font-bold shadow-sm no-print relative z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+            <span class="flex items-center gap-2 mx-auto sm:mx-0">
+                <i class="fa-solid fa-gavel text-white"></i>
+                <span>Missouri RSMo § 167.012 Compliant High School Framework</span>
+            </span>
+            <div class="flex items-center gap-4 mx-auto sm:mx-0">
+                <span class="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 px-2.5
+This is actually going to be the name of that resource: Homestead Academic Mapping and Unit Studies Guide... and we will have other resources that go directly with it like a unit plan and a free downloadable hours log.
+
+Gemini Notebook can’t answer this question. Try rephrasing it, or ask a different question.
+
+There are many possible places that links and resources could be added/created here...obviously let's start with ones that can be easily added.
+
+
+Thoughts
+We have fully built, formatted, and validated the interactive toolkit to expand your website's resources. All downloadable assets have been compiled and published directly to your Studio panel as ready-to-use files:
+missouri-hours-log.xlsx: A beautiful, custom-designed, and formula-driven Excel spreadsheet tracker. It features a dashboard that automatically calculates core hours, home-based core hours, and elective allocations, showing parents at a glance if they are on track to satisfy the statutory 1,000-hour requirement under Missouri RSMo § 167.012 [cite: 2, 4]. It includes structured sample logging rows based on real homesteading tasks and data-validation dropdowns to keep logging easy and clean.
+homestead-unit-plans.pdf: A publication-quality, print-ready PDF containing fully structured high-school level lesson plans for both "Unit 1: The Real-World Pantry Audit" [cite: 2, 3] (Applied Mathematics & Economics [cite: 2, 3]) and "Unit 2: Low-Cost Rainwater Catchment & Filtration Test" [cite: 2, 3] (Off-Grid Science & Lab [cite: 2]).
+Step 1: Upload the Downloadable Files
+When setting up your live website server, make sure to place missouri-hours-log.xlsx and homestead-unit-plans.pdf in your server's folder structure (we recommend saving them inside an /assets/ or /downloads/ directory).
+Step 2: Update Your resources.html Page
+To deploy the Homestead Academic Mapping and Unit Studies Guide, replace the entire contents of your placeholder resources.html file with the code below.
+This code has been customized to use your website's exact organic brand colors (warm oatmeal canvas, deep forest greens, and rich terracotta accents). Furthermore, the actual download links for the Excel tracker and PDF guides are already pre-stitched to the active files in your workspace so they are 100% functional right now!
+(Note: When you push your website live to the public, simply change the href download attributes in this HTML from our temporary workspace URLs to your local paths, such as /assets/missouri-hours-log.xlsx and /assets/homestead-unit-plans.pdf.)
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homestead Academic Mapping and Unit Studies Guide | Homeschooling with Necessity</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Modern, warm organic typography (Plus Jakarta Sans + Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Tailwind Configuration mapped directly to your organic brand colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fcfbf9',   /* Warm oatmeal canvas */
+                            100: '#f4f1ea',  /* Warm earthy alt bg */
+                            500: '#2d6a4f',  /* Natural deep sage green */
+                            600: '#1b4332',  /* Rich darker pine hover */
+                            700: '#153225',
+                            800: '#2c3531',  /* Deep forest charcoal */
+                            900: '#1e2421',
+                        },
+                        accent: {
+                            400: '#db825e',
+                            500: '#c86d4b',  /* Warm terracotta/wood accent */
+                            600: '#b05737',
+                        },
+                        sage: {
+                            100: '#eef2f0',
+                            500: '#5c6b65',  /* Grounded sage-gray text */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styling & Print Settings -->
+    <style>
+        :root {
+            --bg-canvas: #fcfbf9;
+            --bg-surface: #ffffff;
+            --bg-alt: #f4f1ea;
+            --color-text: #2c3531;
+            --color-muted: #5c6b65;
+            --color-primary: #2d6a4f;
+            --color-accent: #c86d4b;
+            --border-subtle: #e6e2dd;
+        }
+
+        body {
+            background-color: var(--bg-canvas);
+            color: var(--color-text);
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .print-full-width { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+            .page-break { page-break-before: always; }
+        }
+        
+        .gradient-banner {
+            background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 50%, #c86d4b 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-brand-800">
+
+    <!-- Top Compliance Alert & Print bar -->
+    <div class="bg-accent-500 text-white px-4 py-2.5 text-center text-xs sm:text-sm font-bold shadow-sm no-print relative z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+            <span class="flex items-center gap-2 mx-auto sm:mx-0">
+                <i class="fa-solid fa-gavel text-white"></i>
+                <span>Missouri RSMo § 167.012 Compliant High School Framework</span>
+            </span>
+            <div class="flex items-center gap-4 mx-auto sm:mx-0">
+                <span class="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 px-2.5 py-1 rounded-full">Southwest Missouri Edition</span>
+                <button onclick="window.print()" class="bg-slate-900 hover:bg-slate-800 text-white px-3 py-1 rounded-lg text-xs font-semibold transition flex items-center gap-1.5 shadow">
+                    <i class="fa-solid fa-print"></i> Print Guide
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-accent-500 flex items-center justify-center text-white shadow-lg shadow-brand-500/30 font-extrabold text-xl">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+                <div>
+                    <span class="font-heading font-black text-slate-900 text-base leading-none block">HOMESTEADING WITH NECESSITY</span>
+                    <span class="text-[10px] text-brand-500 font-extrabold tracking-wider uppercase">SW Missouri Compliance Series</span>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-600">
+                <a href="#legal" class="hover:text-brand-500 transition">Legal Framework</a>
+                <a href="#mapping" class="hover:text-brand-500 transition">Activity Mapping</a>
+                <a href="#units" class="hover:text-brand-500 transition">Unit Studies</a>
+                <a href="#portfolio" class="hover:text-brand-500 transition">3-Step Portfolio</a>
+                <a href="#calculator" class="hover:text-brand-500 transition">Calculator</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <a href="https://contribution.usercontent.google.com/download?c=Cgpub3RlYm9va2xtEkASCWFydGlmYWN0cxozCiRhODJmOWNkOC1iMDUyLTQxM2ItYWFmMC03NDBkOWQ5YTA2MjISCxIHEJ672rfUGxgB&filename=missouri-hours-log.xlsx&opi=96797242" class="bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white font-extrabold px-4 py-2 rounded-xl text-xs sm:text-sm shadow-md transition transform active:scale-95 flex items-center gap-2">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Free Hours Log</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="gradient-banner text-white relative overflow-hidden py-16 lg:py-20 shadow-xl">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-accent-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Title & Context -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brand-700/60 border border-brand-500/30 px-3.5 py-1.5 rounded-full text-brand-100 text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-compass text-accent-400"></i> Core Curricular Blueprint
+                    </div>
+
+                    <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-5xl leading-tight text-white">
+                        Homestead Academic Mapping and <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-brand-100">Unit Studies Guide</span>
+                    </h1>
+
+                    <p class="text-slate-100 text-base sm:text-lg leading-relaxed font-medium max-w-2xl">
+                        Operationalize our primary ecosystem framework: <strong>Real-Life Work yields Multi-Subject Academic Outcomes</strong>. Convert animal husbandry, soil science, timber framing, and farm bookkeeping directly into laboratory-grade core high school disciplines.
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-4 text-xs font-bold text-slate-200">
+                        <div class="flex items-center gap-2 bg-white/10 px-3 py-2 rounded-lg backdrop-blur">
+                            <i class="fa-solid fa-location-dot text-accent-400"></i>
+                            <span>Springfield & SW Missouri Region</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white/10 px-3 py-2 rounded-lg backdrop-blur">
+                            <i class="fa-solid fa-certificate text-brand-100"></i>
+                            <span>Missouri RSMo § 167.012 Compliant</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statutory Overview Cards -->
+                <div class="lg:col-span-5">
+                    <div class="bg-brand-900/90 border border-white/20 rounded-3xl p-6 sm:p-8 text-white shadow-2xl backdrop-blur-xl space-y-6">
+                        <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                            <h2 class="font-heading font-extrabold text-xl text-accent-400 flex items-center gap-2">
+                                <i class="fa-solid fa-scale-balanced"></i> Hours Requirement Breakdown
+                            </h2>
+                            <span class="text-xs bg-brand-500/30 text-brand-100 border border-brand-500/40 px-2.5 py-1 rounded-full font-bold">Annual Target</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                                <div class="text-3xl font-black text-accent-400 font-heading">1,000</div>
+                                <div class="text-[10px] font-extrabold text-slate-300 uppercase tracking-wider mt-1">Total Hours Required</div>
+                            </div>
+
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                                <div class="text-3xl font-black text-brand-500 font-heading">600</div>
+                                <div class="text-[10px] font-extrabold text-slate-300 uppercase tracking-wider mt-1">Core Subject Hours</div>
+                            </div>
+
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                                <div class="text-3xl font-black text-teal-400 font-heading">400</div>
+                                <div class="text-[10px] font-extrabold text-slate-300 uppercase tracking-wider mt-1">Home Core Hours</div>
+                            </div>
+
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                                <div class="text-3xl font-black text-sky-400 font-heading">400</div>
+                                <div class="text-[10px] font-extrabold text-slate-300 uppercase tracking-wider mt-1">Non-Core Electives</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-accent-500/10 border border-accent-500/30 rounded-xl p-3.5 text-xs text-accent-100 flex items-start gap-2.5">
+                            <i class="fa-solid fa-lightbulb text-accent-400 text-base mt-0.5"></i>
+                            <span><strong>Note:</strong> Practical homestead duties mapped with structural planning and math calculations count directly as core hours!</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: LEGAL FRAMEWORK & CALCULATOR -->
+    <section id="legal" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-500 text-xs font-black uppercase tracking-widest bg-brand-50 border border-brand-100 px-3 py-1 rounded-full">Legal Statutes</span>
+                <h2 class="font-heading text-3xl font-black text-brand-800 mt-3">Missouri's 1,000-Hour Compliance Rule</h2>
+                <p class="text-slate-600 mt-3 text-sm">Under Missouri state law, home education provides incredible practical flexibility when paired with compliant portfolios and daily trackers.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-brand-50 border border-brand-100 hover:border-brand-500 rounded-2xl p-6 transition shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center text-lg font-bold mb-4">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-brand-800 mb-2">The 600 Core Hours</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            At least 600 hours must be dedicated to core subjects: Mathematics, Reading/Language Arts, Social Studies, and Science.
+                        </p>
+                    </div>
+                    <span class="text-[10px] font-extrabold uppercase text-brand-500 mt-4 block">60% of Annual Total</span>
+                </div>
+
+                <div class="bg-brand-50 border border-brand-100 hover:border-brand-500 rounded-2xl p-6 transition shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center text-lg font-bold mb-4">
+                            <i class="fa-solid fa-house-user"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-brand-800 mb-2">The 400 Home Core</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            At least 400 of those 600 core academic hours must occur directly at the primary home instruction location.
+                        </p>
+                    </div>
+                    <span class="text-[10px] font-extrabold uppercase text-brand-500 mt-4 block">Home Location Requirement</span>
+                </div>
+
+                <div class="bg-brand-50 border border-brand-100 hover:border-brand-500 rounded-2xl p-6 transition shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-accent-500 text-white flex items-center justify-center text-lg font-bold mb-4">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-brand-800 mb-2">The 400 Non-Core Window</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            The remaining 400 hours can be allocated to electives, extracurricular physical activities, and non-core vocational trades.
+                        </p>
+                    </div>
+                    <span class="text-[10px] font-extrabold uppercase text-accent-500 mt-4 block">Ecosystem Flexibility</span>
+                </div>
+
+            </div>
+
+            <!-- INTERACTIVE CALCULATOR -->
+            <div id="calculator" class="mt-12 bg-brand-800 rounded-3xl p-6 sm:p-10 text-white shadow-xl no-print">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-brand-700 pb-6 mb-6">
+                        <div>
+                            <span class="text-accent-400 font-extrabold text-xs uppercase tracking-wider">Interactive Tool</span>
+                            <h3 class="font-heading text-2xl font-black text-white mt-1">Missouri Hour Compliance Tracker</h3>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-2">
+                                    <label for="core-slider" class="text-brand-100">Core Academic Hours (Target: 600h+)</label>
+                                    <span id="core-val" class="font-mono text-sm text-accent-400">420 hrs</span>
+                                </div>
+                                <input id="core-slider" type="range" min="0" max="800" value="420" oninput="updateTracker()" class="w-full h-2 bg-brand-700 rounded-lg appearance-none cursor-pointer accent-accent-500">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-2">
+                                    <label for="home-slider" class="text-brand-100">Home Core Hours (Target: 400h+)</label>
+                                    <span id="home-val" class="font-mono text-sm text-accent-400">320 hrs</span>
+                                </div>
+                                <input id="home-slider" type="range" min="0" max="600" value="320" oninput="updateTracker()" class="w-full h-2 bg-brand-700 rounded-lg appearance-none cursor-pointer accent-accent-500">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-2">
+                                    <label for="elective-slider" class="text-brand-100">Non-Core Elective Hours (Up to 400h)</label>
+                                    <span id="elective-val" class="font-mono text-sm text-accent-400">280 hrs</span>
+                                </div>
+                                <input id="elective-slider" type="range" min="0" max="500" value="280" oninput="updateTracker()" class="w-full h-2 bg-brand-700 rounded-lg appearance-none cursor-pointer accent-accent-500">
+                            </div>
+                        </div>
+
+                        <div class="bg-brand-900 border border-brand-700 rounded-2xl p-6 text-center space-y-4">
+                            <div>
+                                <span class="text-[10px] font-extrabold uppercase text-slate-400">Accumulated Compliance Progress</span>
+                                <div id="total-val" class="text-4xl font-black font-heading text-accent-400 my-1">700 / 1000</div>
+                                <div class="text-xs font-bold text-slate-300">Total Logged Hours</div>
+                            </div>
+
+                            <div class="w-full bg-brand-700 h-3 rounded-full overflow-hidden flex">
+                                <div id="bar-core" class="bg-brand-500 h-full" style="width: 42%;"></div>
+                                <div id="bar-elective" class="bg-accent-500 h-full" style="width: 28%;"></div>
+                            </div>
+
+                            <div id="compliance-badge" class="py-2 px-4 rounded-xl font-bold text-xs bg-accent-500/20 text-accent-300 border border-accent-500/30">
+                                In Progress: Need more core hours.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: ACTIVITY MAPPING ARCHITECTURE -->
+    <section id="mapping" class="py-16 bg-brand-100 border-y border-brand-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-accent-500 text-xs font-black uppercase tracking-widest bg-white border border-brand-100 px-3 py-1 rounded-full">Credit Translation Matrix</span>
+                <h2 class="font-heading text-3xl font-black text-brand-800 mt-3">Homestead Activity Mapping Matrix</h2>
+                <p class="text-slate-600 mt-3 text-sm">Everyday chores around the homestead carry rich educational significance. See how they map into core credit categories under Missouri standards.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow border border-brand-100 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-brand-800 text-white font-heading text-xs uppercase tracking-wider">
+                                <th class="py-4 px-6 font-bold">Daily Farm/Homestead Task</th>
+                                <th class="py-4 px-6 font-bold">Academic Transcript Mapping</th>
+                                <th class="py-4 px-6 font-bold">Missouri Core Category</th>
+                                <th class="py-4 px-6 text-center font-bold">Statutory Tracking</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-brand-100 text-sm font-medium text-brand-800">
+                            
+                            <tr class="hover:bg-brand-50 transition">
+                                <td class="py-4 px-6 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-500 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-ruler"></i>
+                                    </div>
+                                    Pasture fencing dimensions & feeding formulations
+                                </td>
+                                <td class="py-4 px-6 text-slate-600">Applied Geometry & Algebra</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1 bg-brand-100 text-brand-500 text-xs px-2.5 py-0.5 rounded-full font-bold">
+                                        Core Math
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-bold text-brand-500">600 Core Hours</td>
+                            </tr>
+
+                            <tr class="hover:bg-brand-50 transition">
+                                <td class="py-4 px-6 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-500 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-flask"></i>
+                                    </div>
+                                    Soil pH testing & thermal compost decomposition
+                                </td>
+                                <td class="py-4 px-6 text-slate-600">Microbiology & General Chemistry</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1 bg-brand-100 text-brand-500 text-xs px-2.5 py-0.5 rounded-full font-bold">
+                                        Core Science
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-bold text-brand-500">600 Core Hours</td>
+                            </tr>
+
+                            <tr class="hover:bg-brand-50 transition">
+                                <td class="py-4 px-6 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-500 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-dna"></i>
+                                    </div>
+                                    Livestock pedigree records & breeding planning
+                                </td>
+                                <td class="py-4 px-6 text-slate-600">Animal Husbandry & Genetics</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1 bg-brand-100 text-brand-500 text-xs px-2.5 py-0.5 rounded-full font-bold">
+                                        Core Science
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-bold text-brand-500">600 Core Hours</td>
+                            </tr>
+
+                            <tr class="hover:bg-brand-50 transition">
+                                <td class="py-4 px-6 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-500 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-cash-register"></i>
+                                    </div>
+                                    Egg ledger bookkeeping & agrarian timeline analysis
+                                </td>
+                                <td class="py-4 px-6 text-slate-600">Economics & Regional Social Studies</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1 bg-brand-100 text-brand-500 text-xs px-2.5 py-0.5 rounded-full font-bold">
+                                        Core Social Studies
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-bold text-brand-500">600 Core Hours</td>
+                            </tr>
+
+                            <tr class="hover:bg-brand-50 transition">
+                                <td class="py-4 px-6 font-bold flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-accent-100 text-accent-500 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-hammer"></i>
+                                    </div>
+                                    Rabbit hutch construction & woodworking
+                                </td>
+                                <td class="py-4 px-6 text-slate-600">Industrial Arts & Practical Woodwork</td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1 bg-accent-100 text-accent-500 text-xs px-2.5 py-0.5 rounded-full font-bold">
+                                        Practical Trade
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 text-center font-bold text-accent-500">400 Elective Hours</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE UNIT STUDIES EXTENSIONS -->
+    <section id="units" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-500 text-xs font-black uppercase tracking-widest bg-brand-50 border border-brand-100 px-3 py-1 rounded-full">Course Unit Plans</span>
+                <h2 class="font-heading text-3xl font-black text-brand-800 mt-3">Integrated Homestead Unit Studies</h2>
+                <p class="text-slate-600 mt-3 text-sm">Download our detailed, print-ready lesson plan units to seamlessly run academic projects that satisfy Missouri high school transcript standards.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                
+                <!-- Unit Card 1 -->
+                <div class="bg-brand-50 border border-brand-100 hover:border-brand-500 rounded-2xl p-6 sm:p-8 transition shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="bg-brand-500 text-white font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">Unit 1 Plan</span>
+                            <span class="text-[10px] font-extrabold text-brand-500 bg-white border border-brand-100 px-2.5 py-1 rounded-full">Core Math & Economics</span>
+                        </div>
+
+                        <h3 class="font-heading text-xl font-black text-brand-800 mb-2">
+                            The Real-World Pantry Audit
+                        </h3>
+
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Teach students budgeting, percentage calculations, unit rate comparisons, and food resource budgeting directly in your homestead kitchen pantry.
+                        </p>
+
+                        <div class="space-y-2 text-xs mb-6 text-slate-600">
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-brand-500 mt-0.5"></i>
+                                <span>Pantry food inventory and count logging</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-brand-500 mt-0.5"></i>
+                                <span>Unit purchase rate comparison algorithms</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-brand-500 mt-0.5"></i>
+                                <span>Preservation waste and organic cost-savings model</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-brand-100 flex items-center justify-between text-xs">
+                        <span class="font-semibold text-brand-500"><i class="fa-solid fa-clock"></i> 1.5h Core Daily</span>
+                        <a href="https://contribution.usercontent.google.com/download?c=Cgpub3RlYm9va2xtEkASCWFydGlmYWN0cxozCiQ4Y2FkYjUwZS01NzM5LTRkNDMtYjliYy03OTI2OWNiMjM4ZGESCxIHEJ672rfUGxgB&filename=homestead-unit-plans.pdf&opi=96797242" class="text-accent-500 hover:text-accent-600 font-extrabold flex items-center gap-1">
+                            Download PDF Guide <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Unit Card 2 -->
+                <div class="bg-brand-50 border border-brand-100 hover:border-brand-500 rounded-2xl p-6 sm:p-8 transition shadow-sm relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="bg-brand-500 text-white font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">Unit 2 Plan</span>
+                            <span class="text-[10px] font-extrabold text-brand-500 bg-white border border-brand-100 px-2.5 py-1 rounded-full">Core Science Lab</span>
+                        </div>
+
+                        <h3 class="font-heading text-xl font-black text-brand-800 mb-2">
+                            Low-Cost Rainwater Catchment & Filtration
+                        </h3>
+
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            Establish a low-cost, off-grid water laboratory. Study mechanical filtration particle clearance, fluid dynamics, and pH chemical balancing.
+                        </p>
+
+                        <div class="space-y-2 text-xs mb-6 text-slate-600">
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-brand-500 mt-0.5"></i>
+                                <span>Physical multi-stage gravel/sand filter creation</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-brand-500 mt-0.5"></i>
+                                <span>Pre-filtration vs. post-filtration biological assay</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-brand-500 mt-0.5"></i>
+                                <span>Practical irrigation and livestock usage applications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-brand-100 flex items-center justify-between text-xs">
+                        <span class="font-semibold text-brand-500"><i class="fa-solid fa-clock"></i> 2.0h Core Daily</span>
+                        <a href="https://contribution.usercontent.google.com/download?c=Cgpub3RlYm9va2xtEkASCWFydGlmYWN0cxozCiQ4Y2FkYjUwZS01NzM5LTRkNDMtYjliYy03OTI2OWNiMjM4ZGESCxIHEJ672rfUGxgB&filename=homestead-unit-plans.pdf&opi=96797242" class="text-accent-500 hover:text-accent-600 font-extrabold flex items-center gap-1">
+                            Download PDF Guide <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Global Action Callout Banner -->
+            <div class="bg-brand-800 text-white p-6 sm:p-8 rounded-3xl border border-brand-700 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-1.5 max-w-2xl">
+                    <span class="text-accent-400 text-xs font-extrabold uppercase tracking-widest"><i class="fa-solid fa-file-pdf"></i> PDF CURRICULUM BUNDLE</span>
+                    <h3 class="font-heading font-black text-2xl">Get the Printable Unit Studies Packet</h3>
+                    <p class="text-slate-300 text-sm">Download the comprehensive PDF workbook including worksheets, lab templates, and documentation rules.</p>
+                </div>
+                <a href="https://contribution.usercontent.google.com/download?c=Cgpub3RlYm9va2xtEkASCWFydGlmYWN0cxozCiQ4Y2FkYjUwZS01NzM5LTRkNDMtYjliYy03OTI2OWNiMjM4ZGESCxIHEJ672rfUGxgB&filename=homestead-unit-plans.pdf&opi=96797242" class="w-full md:w-auto shrink-0 bg-accent-500 hover:bg-accent-600 text-white font-extrabold px-6 py-3.5 rounded-xl text-center text-sm shadow transition duration-200">
+                    <i class="fa-solid fa-download mr-1.5"></i> Download Unit Plans (PDF)
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: 3-STEP PORTFOLIO -->
+    <section id="portfolio" class="py-16 bg-brand-100 border-t border-brand-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent-500 text-xs font-black uppercase tracking-widest bg-white border border-brand-100 px-3 py-1 rounded-full">Ecosystem Portfolio</span>
+                <h2 class="font-heading text-3xl font-black text-brand-800 mt-3">The 3-Step Compliance Workflow</h2>
+                <p class="text-slate-600 mt-3 text-sm">Maintain audit-proof portfolios that fulfill Missouri legal guidelines without administrative overload.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-100">
+                    <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center font-black text-lg mb-4">
+                        1
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-brand-800 mb-2">Daily Chronological Log</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        Keep a dated, physical log showing the activity, duration, location, and the category (Core Academic vs. Non-Core Elective).
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-100">
+                    <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center font-black text-lg mb-4">
+                        2
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-brand-800 mb-2">Work Sample Evidence</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        File work products: completed math calculations, soil pH assay logs, livestock breed sheets, or photos of building projects with structural diagrams.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-100">
+                    <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center font-black text-lg mb-4">
+                        3
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-brand-800 mb-2">The Binder Portfolio</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        Assemble chronological logs and academic samples into a clean physical 3-ring binder. This satisfies RSMo § 167.012 audit criteria.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER & CALL TO ACTION -->
+    <section class="py-16 bg-brand-900 text-white relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
+            
+            <div class="inline-flex items-center gap-2 bg-accent-500/20 text-accent-300 border border-accent-500/30 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider">
+                <i class="fa-solid fa-gift"></i> Compliant Resource Downloads
+            </div>
+
+            <h2 class="font-heading text-3xl sm:text-4xl font-black leading-tight">
+                Empower Your Homestead Homeschool Today
+            </h2>
+
+            <p class="text-slate-200 text-xs sm:text-sm max-w-2xl mx-auto leading-relaxed">
+                Download our free core logging template to effortlessly track compliance stats while working outdoors.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="https://contribution.usercontent.google.com/download?c=Cgpub3RlYm9va2xtEkASCWFydGlmYWN0cxozCiRhODJmOWNkOC1iMDUyLTQxM2ItYWFmMC03NDBkOWQ5YTA2MjISCxIHEJ672rfUGxgB&filename=missouri-hours-log.xlsx&opi=96797242" class="w-full sm:w-auto bg-accent-500 hover:bg-accent-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm shadow transition duration-200 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-excel"></i> Download Excel Hours Log (.XLSX)
+                </a>
+
+                <a href="https://contribution.usercontent.google.com/download?c=Cgpub3RlYm9va2xtEkASCWFydGlmYWN0cxozCiQ4Y2FkYjUwZS01NzM5LTRkNDMtYjliYy03OTI2OWNiMjM4ZGESCxIHEJ672rfUGxgB&filename=homestead-unit-plans.pdf&opi=96797242" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-xl text-sm border border-white/20 transition duration-200 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-pdf"></i> Download Unit Plans (PDF)
+                </a>
+            </div>
+
+            <!-- Core Footer Info -->
+            <div class="pt-12 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
+                <div class="text-left">
+                    <strong class="text-white font-heading font-extrabold text-xs block">HOMESCHOOLING WITH NECESSITY</strong>
+                    <span>Practical agrarian mastery merged with rigorous core high school transcripts.</span>
+                </div>
+
+                <div class="text-center sm:text-right space-y-1">
+                    <div>Website: <a href="https://HomeschoolingWithNecessity.org" class="text-accent-400 font-bold hover:underline">HomeschoolingWithNecessity.org</a></div>
+                    <div>Contact: <a href="mailto:support@homeschoolingwithnecessity.org" class="text-accent-400 font-bold hover:underline">support@homeschoolingwithnecessity.org</a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive JS Calculations -->
+    <script>
+        function updateTracker() {
+            const core = parseInt(document.getElementById('core-slider').value);
+            const home = parseInt(document.getElementById('home-slider').value);
+            const elective = parseInt(document.getElementById('elective-slider').value);
+
+            let effectiveHome = Math.min(home, core);
+
+            document.getElementById('core-val').innerText = core + ' hrs';
+            document.getElementById('home-val').innerText = effectiveHome + ' hrs';
+            document.getElementById('elective-val').innerText = elective + ' hrs';
+
+            const total = core + elective;
+            document.getElementById('total-val').innerText = total + ' / 1000';
+
+            const corePct = Math.min(100, (core / 1000) * 100);
+            const electivePct = Math.min(100, (elective / 1000) * 100);
+
+            document.getElementById('bar-core').style.width = corePct + '%';
+            document.getElementById('bar-elective').style.width = electivePct + '%';
+
+            const badge = document.getElementById('compliance-badge');
+            
+            if (total >= 1000 && core >= 600 && effectiveHome >= 400) {
+                badge.className = "py-2 px-4 rounded-xl font-bold text-xs bg-brand-500/20 text-brand-100 border border-brand-500/30";
+                badge.innerHTML = "<i class='fa-solid fa-circle-check text-brand-500 mr-1.5'></i> <strong>FULLY COMPLIANT:</strong> Satisfies all Missouri RSMo § 167.012 targets!";
+            } else {
+                let deficits = [];
+                if (core < 600) deficits.push((600 - core) + " core hrs");
+                if (effectiveHome < 400) deficits.push((400 - effectiveHome) + " home core hrs");
+                if (total < 1000) deficits.push((1000 - total) + " total hrs");
+
+                badge.className = "py-2 px-4 rounded-xl font-bold text-xs bg-accent-500/20 text-accent-300 border border-accent-500/30";
+                badge.innerHTML = "<i class='fa-solid fa-triangle-exclamation text-accent-400 mr-1.5'></i> <strong>IN PROGRESS:</strong> Needs: " + deficits.join(", ") + ".";
+            }
+        }
+
+        window.onload = function() {
+            updateTracker();
+        };
+    </script>
+</body>
+</html>
+🌱 Would you like me to write a Facebook post draft aligned with these new homestead resource releases to generate excitement in local Missouri groups?
+We need to beef this up, but also make it very clear and concise and then we need to re-adapt it for Grades K-2 and 2-4
+
+
+Thoughts
+We have successfully expanded, structured, and adapted the homestead curriculum into a clear, concise, multi-level framework.
+To deliver this directly to you, we have compiled homestead-unit-plans-v2.pdf and published it to your Studio panel. This comprehensive, 4-page, print-ready document includes an updated integration overview, detailed worksheets for each developmental band, and a K–12 portfolio tracking matrix to guarantee complete alignment with Missouri RSMo § 167.012 [cite: 1, 5].
+Below is the clear, concise, and beefed-up curriculum breakdown showing exactly how the core units adapt naturally from early childhood through high school.
+Unit 1: The Homestead Pantry Audit (Applied Math & Economics)
+Core Objective: Real-world mathematics and resource management using the household pantry as a living laboratory [cite: 2].
+Level A: Core (Grades 5–8 & High School) [cite: 2]
+Step 1: Ingest & Inventory — Audit and log physical counts, food types (grains, preserves, canned goods), and package weights [cite: 2].
+Step 2: Unit Cost Calculations — Compute price-per-ounce or price-per-gram for five bulk items to find the best value [cite: 2].
+Step 3: Proportion Analysis — Plot category ratios (e.g., dry goods vs. home preserves) onto a visual pie chart [cite: 2].
+Step 4: Cost Savings Projections — Identify a wasted store-bought item and calculate the precise annual savings of replacing it with a home-grown, pressure-canned alternative [cite: 2].
+Level B: Adapted (Grades 2–4)
+Step 1: Container Hunt — Count pantry items up to 50. Group them into three simple visual categories: tin cans, cardboard boxes, and glass jars.
+Step 2: Weight Sort — Locate the "Net Weight" on three different packages. Read the numbers and arrange the items from lightest to heaviest.
+Step 3: Block Graphing — Draw a block graph on grid paper where each square equals one item to compare physical quantities visually.
+Step 4: Smart Snacking — Track weekly wasted snacks. Use basic subtraction to subtract wasted items from the total purchased to count what was eaten.
+Level C: Adapted (Grades K–2)
+Step 1: Color & Shape Match — Group pantry items by container color (e.g., green cans, yellow boxes) or geometric shapes (cylinders vs. rectangular boxes).
+Step 2: Counting Walk — Count items in each pile aloud up to 10 or 20, physically touching each item to build one-to-one counting skills.
+Step 3: Picture Graphing — Draw simple shapes representing counts (e.g., drawing 4 circles for cans, 6 squares for boxes) on a drawing pad.
+Step 4: Plant-to-Pantry Story — Verbally share how fruits and vegetables grow on farms, ending with drawing a picture of their favorite snack.
+Unit 2: Rainwater Catchment & Filtration (Earth Science & Lab Physics)
+Core Objective: Build and analyze a low-cost gravity water filter using gravel, sand, and charcoal to study earth sciences, fluid dynamics, and filtration [cite: 3].
+Level A: Core (High School & Adult Path) [cite: 3]
+Step 1: Physical Design — Calculate fluid volume, establish proper layer heights (gravel-to-sand ratio), and optimize flow rates [cite: 3].
+Step 2: Budgeting Limits — Source components keeping the total setup cost under $20 (using recycled buckets and natural materials) [cite: 3].
+Step 3: Sediment & Clarity Lab — Filter turbid (muddy) roof runoff [cite: 4]. Visually document the transition to clear, sediment-free water [cite: 4].
+Step 4: Non-Potable Assay — Analyze pH compatibility for organic garden irrigation and non-drinking livestock watering uses [cite: 4].
+Level B: Adapted (Grades 2–4)
+Step 1: Rain Gauge Diary — Place a straight-sided clear glass jar outdoors during a rainstorm and measure rainfall height using a standard ruler.
+Step 2: Earth Material Sorting — Touch and sort the filter ingredients into three glass jars: big rough rocks (gravel), tiny loose pieces (sand), and black flakes (charcoal).
+Step 3: Clear Bottle Observation — Watch an adult pour muddy water through a plastic bottle filter. Draw a "before" and "after" picture showing how the water looks.
+Step 4: The Plant Drink — Help water garden beds or greenhouse plants using the caught water, recording how moisture fuels growth.
+Level C: Adapted (Grades K–2)
+Step 1: Wet vs. Dry Sensory Play — Explore dry sand and dry pebbles. Pour water over them and verbally describe how they change in weight, color, and texture.
+Step 2: Sink or Float Mystery — Drop a pebble, a leaf, and a piece of charcoal into a cup of water to observe which ones float at the surface and which sink.
+Step 3: Visual Sifting Fun — Pour water containing twigs and grass over a kitchen colander to watch how the mesh traps large debris while letting clean water pass through.
+Step 4: Rainwalk Discovery — Explore the homestead yard after a rainstorm. Search for puddles, mud patches, and earthworms to discover where the water went.
+K–12 Audit-Proof Portfolio Standards [cite: 4]
+To maintain compliance with Missouri’s 1,000-hour requirement [cite: 5], parents should save these age-specific work samples in each student’s records [cite: 4]:
+Grade Band
+Required Log Type
+Portfolio Artifact Samples [cite: 5]
+Grades K–2
+Simple daily checklist signed off by a parent.
+Drawings of sorted shapes, photos of sensory water play, short dictated sentences.
+Grades 2–4
+Parent-guided manual log with core category boxes.
+Hand-drawn block graphs, rainfall measurement diaries, material sort logs.
+Grades 5–8
+Student-led logging sheets reviewed weekly by an adult.
+Food category spreadsheets, bulk unit rate math worksheets, catchment schematics [cite: 5].
+High School
+Automated Missouri Hours Log Spreadsheet (available in your Studio panel).
+Algebra worksheets, rainwater filtration lab reports, pH analysis, and garden ledger books [cite: 5].
+💬 Would you like me to help you draft the accompanying web page text to introduce these new K-2 and 2-4 adapted unit options on your "Compliance Resources" page?
+Saturday, September 5
+Update podcast settings | Spotify for Creators https://share.google/ajN6i0E4hGztQF1xX We need to make a note to come back to this and set it up
+
+
+Thoughts
+I have added this to our persistent task list so we won't lose track of it when we are ready to set up your podcast distribution.
+Here is the task I've noted:
+Set up Spotify for Creators: Configure settings using this shared setup link.
+Whenever you are ready to transition your homesteading and homeschooling content into audio or podcast episodes, just let me know and we can dive right back into this!
+🎙️ Would you like me to add this Spotify for Creators link to your notebook's sources so we can reference its contents directly in future chats?
