@@ -3,17 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Homeschooling with Necessity</title>
+<meta name="theme-color" content="#100817">
+<title>Homeschooling with Necessity | Don't Talk About It. Be About It.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<style>
+:root{--hwn-purple:#8700df;--hwn-magenta:#d42cff;--hwn-black:#100817;--hwn-white:#fff;--hwn-gold:#f5b51b}
+body{background:var(--hwn-black);color:#f9f5fc;font-family:'Inter',system-ui,sans-serif}
+h1,h2,h3,.brand-name{font-family:'Barlow Condensed',Impact,sans-serif;letter-spacing:.005em}
+.site-header{background:rgba(16,8,23,.96);border-bottom:1px solid rgba(212,44,255,.38);box-shadow:0 5px 28px rgba(135,0,223,.2);backdrop-filter:blur(12px)}
+.brand-name{color:#fff;font-size:1.35rem;text-transform:uppercase;text-shadow:2px 2px 0 var(--hwn-purple),0 0 16px rgba(212,44,255,.65)}
+.brand-tagline{font:600 .65rem 'Inter',sans-serif;letter-spacing:.12em;color:#d8c6e5;text-transform:uppercase;margin-top:.15rem;text-shadow:none}
+.nav-link{color:#eee4f4}.nav-link:hover,.nav-link:focus-visible{color:#fff;background:rgba(135,0,223,.3)}
+.nav-cta{background:var(--hwn-purple);box-shadow:0 0 18px rgba(135,0,223,.55)}.nav-cta:hover{background:var(--hwn-magenta)}
+.dropdown-menu{background:#1d1028;border-color:#6f19a5}.dropdown-menu li a{color:#f2e8f8}.dropdown-menu li a:hover{color:#fff;background:#40115e}
+.mobile-menu-toggle .hamburger-bar{background:#fff}
+.home-hero{position:relative;isolation:isolate;overflow:hidden;padding:clamp(3.5rem,8vw,7rem) 1.5rem 4.5rem;background:radial-gradient(ellipse at 82% 30%,rgba(135,0,223,.34),transparent 38%),radial-gradient(ellipse at 12% 90%,rgba(212,44,255,.2),transparent 38%),linear-gradient(135deg,#100817 0%,#1b0b29 55%,#09060e 100%);border-bottom:1px solid rgba(212,44,255,.4)}
+.home-hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.18;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(to bottom,black,transparent)}
+.hero-inner{width:min(100%,1180px);margin:auto;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(2rem,5vw,4.5rem)}
+.hero-copy{max-width:660px}.eyebrow{display:inline-block;margin-bottom:1.2rem;padding:.45rem .8rem;border:1px solid rgba(212,44,255,.7);border-radius:999px;color:#f3d9ff;background:rgba(135,0,223,.18);font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.home-hero h1{margin:0 0 1.1rem;color:#fff;font-size:clamp(3.8rem,8vw,7.1rem);font-weight:900;line-height:.86;text-transform:uppercase;text-shadow:4px 5px 0 #09050d,7px 8px 0 rgba(135,0,223,.95),0 0 28px rgba(212,44,255,.42)}
+.home-hero h1 em{display:block;margin-top:.15em;color:#e9aaff;font-family:'Permanent Marker',cursive;font-size:.76em;font-style:normal;line-height:1.05;text-shadow:3px 4px 0 #09050d,0 0 20px rgba(212,44,255,.65)}
+.hero-lead{max-width:590px;margin:1.6rem 0 1.8rem;color:#e5d9ec;font-size:clamp(1rem,1.7vw,1.2rem);line-height:1.75}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.85rem}.hwn-button{display:inline-flex;align-items:center;justify-content:center;min-height:3.1rem;padding:.8rem 1.35rem;border:2px solid var(--hwn-purple);border-radius:999px;color:#fff;background:var(--hwn-purple);font-weight:800;text-decoration:none;box-shadow:0 0 22px rgba(135,0,223,.4);transition:.2s}.hwn-button:hover{color:#fff;background:var(--hwn-magenta);border-color:var(--hwn-magenta);transform:translateY(-2px);box-shadow:0 0 26px rgba(212,44,255,.55)}.hwn-button.outline{background:transparent;border-color:#b68acb;box-shadow:none}.hwn-button.outline:hover{background:rgba(135,0,223,.2);border-color:var(--hwn-magenta)}
+.hero-art{position:relative;padding:1rem;border:2px solid rgba(212,44,255,.72);border-radius:1.4rem;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(135,0,223,.13));box-shadow:0 0 0 7px rgba(135,0,223,.13),0 18px 65px rgba(0,0,0,.45),0 0 45px rgba(135,0,223,.35);transform:rotate(1deg)}
+.hero-art img{display:block;width:100%;border-radius:.8rem}.hero-sticker{position:absolute;right:-1.2rem;bottom:-1.5rem;padding:.8rem 1rem;color:#120819;background:var(--hwn-gold);border:4px solid #100817;border-radius:1rem;font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:900;line-height:1;text-align:center;text-transform:uppercase;transform:rotate(-5deg);box-shadow:0 0 0 2px var(--hwn-gold)}
+.motto-strip{padding:1rem 1.5rem;background:linear-gradient(90deg,#4a0871,#8700df,#4a0871);text-align:center;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.3rem,3vw,2rem);font-weight:900;letter-spacing:.08em;text-transform:uppercase;text-shadow:2px 2px 0 #240039}
+.motto-strip span{color:#ffe08a;padding:0 .35rem}
+.home-content{padding:4.5rem 1.5rem 5rem;background:linear-gradient(180deg,#100817,#160c20 60%,#100817)}
+.home-content-inner{width:min(100%,1180px);margin:auto}.section-kicker{margin:0 0 .5rem;color:#d994ff;font-size:.75rem;font-weight:800;letter-spacing:.18em;text-align:center;text-transform:uppercase}
+.home-content h2{margin:0 0 .8rem;color:#fff;font-size:clamp(2.5rem,5vw,4rem);font-weight:900;text-align:center;text-transform:uppercase;text-shadow:3px 3px 0 #59008f}
+.section-intro{max-width:700px;margin:0 auto 2.5rem;color:#d8c9e1;text-align:center;font-size:1.05rem}
+.home-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.15rem}
+.home-card{position:relative;overflow:hidden;min-height:230px;padding:1.55rem;background:linear-gradient(145deg,#24132f,#170d20);border:1px solid rgba(196,128,230,.35);border-top:5px solid var(--hwn-purple);border-radius:1rem;box-shadow:0 12px 28px rgba(0,0,0,.25);transition:transform .2s,border-color .2s,box-shadow .2s}
+.home-card:nth-child(2){border-top-color:#d42cff}.home-card:nth-child(3){border-top-color:#f5b51b}.home-card:nth-child(4){border-top-color:#a66be0}
+.home-card:hover{transform:translateY(-5px);border-color:#d42cff;box-shadow:0 16px 34px rgba(135,0,223,.22)}
+.card-number{color:#bd78e8;font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:800;letter-spacing:.12em}
+.home-card h3{margin:.45rem 0 .65rem;color:#fff;font-size:1.8rem;font-weight:800;text-transform:uppercase}
+.home-card p{margin:0 0 1.15rem;color:#d8cce0;font-size:.94rem;line-height:1.65}
+.card-link{color:#e7aaff;font-weight:800;text-decoration:none}.card-link:hover{color:#fff;text-decoration:underline}
+.home-signoff{margin:3rem auto 0;padding:2rem 1.5rem;border:1px solid rgba(212,44,255,.45);border-radius:1.2rem;background:radial-gradient(ellipse at center,rgba(135,0,223,.24),rgba(32,15,44,.75));text-align:center}
+.home-signoff p{margin:0;color:#fff;font-family:'Permanent Marker',cursive;font-size:clamp(1.7rem,4vw,3rem);text-shadow:2px 3px 0 #5d078b}
+.home-signoff small{display:block;margin-top:.6rem;color:#e0cde9;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.site-footer{padding:2.2rem 1.5rem;color:#cdbbd8;background:#09060e;border-top:1px solid rgba(212,44,255,.3)}.site-footer p{margin:0}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;max-width:700px}.hero-art{max-width:560px;margin:0 auto}.home-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.home-hero{padding:3.2rem 1.1rem 3.6rem}.home-hero h1{font-size:clamp(3.4rem,16vw,5rem)}.hero-art{margin:0 .35rem}.hero-sticker{right:-.5rem;bottom:-1.2rem}.home-grid{grid-template-columns:1fr}.home-card{min-height:0}.motto-strip{letter-spacing:.035em}}
+</style>
 </head>
 <body>
-<header class="site-header"><div class="nav-container"><a href="index.html" class="brand-name">Homeschooling with Necessity<span class="brand-tagline">Empowering Families &bull; Building Futures</span></a><button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></button><nav class="main-nav" id="mainNav"><ul class="nav-list">
+<header class="site-header"><div class="nav-container"><a href="index.html" class="brand-name">Homeschooling with Necessity<span class="brand-tagline">Homeschool • Homestead • Self-Reliance</span></a><button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></button><nav class="main-nav" id="mainNav"><ul class="nav-list">
 <li><a href="index.html" class="nav-link">Home</a></li><li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle">Homeschooling ▾</a><ul class="dropdown-menu"><li><a href="about.html">About &amp; Journey</a></li><li><a href="#">Curriculum Resources</a></li></ul></li><li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle">Education Hub ▾</a><ul class="dropdown-menu"><li><a href="missouri-homestead-academic-framework.html">K–12 Resources</a></li><li><a href="k12-education.html">Lifelong Learning</a></li><li><a href="education-hub/martin-luther-king-jr-2nd-grade.html">Martin Luther King Jr. — 2nd Grade</a></li></ul></li><li class="nav-item dropdown"><a href="the-lab.html" class="nav-link dropdown-toggle">The Lab ▾</a><ul class="dropdown-menu"><li><a href="the-lab.html#investigations">Experiments &amp; Research</a></li><li><a href="the-lab.html#homestead">Homestead &amp; Skills</a></li><li><a href="the-lab.html#economics">Practical Economics</a></li></ul></li><li><a href="resources-projects.html" class="nav-link">Resources &amp; Projects</a></li><li><a href="https://narcoleptichomeschoolmom.blogspot.com/" target="_blank" rel="noopener noreferrer" class="nav-link">Blog</a></li><li><a href="missouri-homestead-academic-framework.html" class="nav-link">Academic Framework</a></li><li><a href="https://gonzo-gospel.myshopify.com/" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta">Shop</a></li>
 </ul></nav></div></header>
-<section class="hero"><div class="hero-banner-wrapper"><div class="hero-banner-container"><img src="assets/images/1788615143048.png" alt="Homeschooling with Necessity" class="hero-banner-image"></div></div><h1>Homeschooling with <span>Necessity</span></h1><p>Empowering families to build flexible, practical education around real life.</p></section>
-<section class="content-section"><div class="content-inner"><h2>Explore Homeschooling with Necessity</h2><div class="custom-grid"><div class="grid-card"><h3>Homeschooling</h3><p>Explore our homeschooling journey, lesson plans, curriculum resources, and practical tools for building an education that fits your family.</p></div><div class="grid-card"><h3>Education Hub</h3><p>Find K–12 learning resources, lifelong learning opportunities, and practical technology skills. The new Missouri Homestead Academic Framework live now.</p></div><div class="grid-card"><h3>The Lab</h3><p>Connect real-world experiments, investigations, homesteading, off-grid skills, and practical economics to learning.</p><p style="margin-top:1rem;"><a class="button secondary" href="the-lab.html">Enter The Lab →</a></p></div><div class="grid-card"><h3>Resources &amp; Projects</h3><p>Browse a growing, organized library of HWN originals, trusted learning tools, and hands-on project ideas.</p><p style="margin-top:1rem;"><a class="button" href="resources-projects.html">Explore Resources →</a></p></div></div></div></section>
-<footer class="site-footer"><p>&copy; 2026 Homeschooling with Necessity. Empowering Families &bull; Building Futures.</p></footer><script>document.getElementById('menuToggle').addEventListener('click',function(){document.getElementById('mainNav').classList.toggle('active');});</script>
+<main>
+<section class="home-hero"><div class="hero-inner"><div class="hero-copy"><span class="eyebrow">A different way to learn. A stronger way to live.</span><h1>Don't Talk<br>About It...<em>Be About It.</em></h1><p class="hero-lead">Homeschooling, homesteading, practical skills, and real-world learning. Build an education and a life that work beyond the four walls of a classroom — and beyond the limits someone else sets for you.</p><div class="hero-actions"><a class="hwn-button" href="resources-projects.html">Explore HWN Resources</a><a class="hwn-button outline" href="the-lab.html">Step Into The Lab</a></div></div><div class="hero-art"><img src="assets/images/1788615143048.png" alt="Homeschooling with Necessity brand artwork"><span class="hero-sticker">Be prepared.<br>Be informed.</span></div></div></section>
+<div class="motto-strip">Homeschool <span>✦</span> Homestead <span>✦</span> Protect <span>✦</span> Provide</div>
+<section class="home-content"><div class="home-content-inner"><p class="section-kicker">Not just a resource library. A starting point.</p><h2>Make Real Life Your Classroom</h2><p class="section-intro">Explore practical tools, trusted resources, hands-on projects, and ideas that help families learn by doing — wherever life happens.</p><div class="home-grid">
+<article class="home-card"><span class="card-number">01 / LEARN</span><h3>Homeschooling</h3><p>Build an education around your family, your learner, and the life you're actually living.</p><a class="card-link" href="about.html">Explore the journey →</a></article>
+<article class="home-card"><span class="card-number">02 / DISCOVER</span><h3>Education Hub</h3><p>Find K–12 learning resources, Missouri guidance, and opportunities for lifelong learning.</p><a class="card-link" href="missouri-homestead-academic-framework.html">Visit the Education Hub →</a></article>
+<article class="home-card"><span class="card-number">03 / DO</span><h3>The Lab</h3><p>Turn experiments, homestead skills, off-grid living, and practical economics into real-world learning.</p><a class="card-link" href="the-lab.html">Enter The Lab →</a></article>
+<article class="home-card"><span class="card-number">04 / BUILD</span><h3>Resources &amp; Projects</h3><p>Browse growing collections of HWN originals, useful tools, and hands-on project ideas.</p><a class="card-link" href="resources-projects.html">Explore resources →</a></article>
+</div><div class="home-signoff"><p>We’re not just talking about change.<br>We’re being the change.</p><small>Homeschooling with Necessity</small></div></div></section>
+</main>
+<footer class="site-footer"><p>&copy; 2026 Homeschooling with Necessity. Homeschool. Homestead. Protect. Provide.</p></footer>
+<script>document.getElementById('menuToggle').addEventListener('click',function(){document.getElementById('mainNav').classList.toggle('active');});</script>
 </body></html>
